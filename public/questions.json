@@ -1,0 +1,92 @@
+[
+  {
+    "id": 1,
+    "question": "Which of the following is the correct past tense of 'go'?",
+    "options": ["goed", "went", "gone", "going"],
+    "correctAnswer": 1,
+    "difficulty": "easy",
+    "category": "Grammar",
+    "explanation": "'Went' is the simple past tense of 'go'. 'Gone' is the past participle, and 'goed' is incorrect."
+  },
+  {
+    "id": 2,
+    "question": "What does the idiom 'Break the ice' mean?",
+    "options": ["To destroy something frozen", "To start a conversation", "To be very cold", "To make someone angry"],
+    "correctAnswer": 1,
+    "difficulty": "medium",
+    "category": "Idioms",
+    "explanation": "'Break the ice' means to initiate conversation or make people feel more comfortable in a social situation."
+  },
+  {
+    "id": 3,
+    "question": "Which word is a synonym for 'enormous'?",
+    "options": ["tiny", "gigantic", "medium", "narrow"],
+    "correctAnswer": 1,
+    "difficulty": "easy",
+    "category": "Vocabulary",
+    "explanation": "'Gigantic' and 'enormous' both mean extremely large in size."
+  },
+  {
+    "id": 4,
+    "question": "In the sentence 'She sings beautifully', what part of speech is 'beautifully'?",
+    "options": ["Adjective", "Adverb", "Noun", "Verb"],
+    "correctAnswer": 1,
+    "difficulty": "medium",
+    "category": "Grammar",
+    "explanation": "'Beautifully' is an adverb because it describes how the action (singing) is performed."
+  },
+  {
+    "id": 5,
+    "question": "Who wrote the famous play 'Romeo and Juliet'?",
+    "options": ["Charles Dickens", "William Shakespeare", "Jane Austen", "Mark Twain"],
+    "correctAnswer": 1,
+    "difficulty": "easy",
+    "category": "Literature",
+    "explanation": "William Shakespeare wrote 'Romeo and Juliet', one of his most famous tragedies."
+  },
+  {
+    "id": 6,
+    "question": "What is the plural form of 'child'?",
+    "options": ["childs", "childrens", "children", "childes"],
+    "correctAnswer": 2,
+    "difficulty": "easy",
+    "category": "Grammar",
+    "explanation": "'Children' is the irregular plural form of 'child'."
+  },
+  {
+    "id": 7,
+    "question": "Which sentence uses the correct form of 'there/their/they're'?",
+    "options": ["There going to the park", "Their happy about the news", "They're planning a party", "There books are on the table"],
+    "correctAnswer": 2,
+    "difficulty": "medium",
+    "category": "Grammar",
+    "explanation": "'They're' is the contraction of 'they are', which is correct in this context."
+  },
+  {
+    "id": 8,
+    "question": "What does 'procrastinate' mean?",
+    "options": ["To work very hard", "To delay or postpone tasks", "To organize efficiently", "To celebrate success"],
+    "correctAnswer": 1,
+    "difficulty": "medium",
+    "category": "Vocabulary",
+    "explanation": "'Procrastinate' means to delay or put off doing something, especially out of habitual carelessness or laziness."
+  },
+  {
+    "id": 9,
+    "question": "Which of these is an example of alliteration?",
+    "options": ["The sun shines brightly", "Peter Piper picked peppers", "She runs very fast", "It was a dark night"],
+    "correctAnswer": 1,
+    "difficulty": "hard",
+    "category": "Literary Devices",
+    "explanation": "Alliteration is the repetition of initial consonant sounds, as in 'Peter Piper picked peppers'."
+  },
+  {
+    "id": 10,
+    "question": "What is the superlative form of 'good'?",
+    "options": ["gooder", "more good", "best", "better"],
+    "correctAnswer": 2,
+    "difficulty": "medium",
+    "category": "Grammar",
+    "explanation": "'Best' is the irregular superlative form of 'good'. 'Better' is the comparative form."
+  }
+]
