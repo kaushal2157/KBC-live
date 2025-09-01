@@ -146,6 +146,7 @@ questions: any[]  = [];
         this.gameState.gameOver = true;
         this.stopTimer();
       }
+
     }, 1000);
   }
 
