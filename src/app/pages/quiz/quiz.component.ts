@@ -150,6 +150,35 @@ questions: any[]  = [];
     }, 1000);
   }
 
+  pauseAndResumeTimer(){
+ if (this.gameState.timerActive) {
+    // ⏸ Pause
+
+    this.gameState.timerActive = false;
+    this.timerSound.pause();
+    clearInterval(this.timerInterval);
+
+  } else {
+    // ▶️ Resume    
+    this.gameState.timerActive = true;
+
+    // Resume sound from where it stopped
+    this.timerSound.play();
+
+    // Resume countdown
+    this.timerInterval = setInterval(() => {
+      if (this.gameState.timeLeft > 0) {
+        this.gameState.timeLeft--;
+      } else {
+        // timer finished
+        this.gameState.gameOver = true;
+        this.stopTimer();
+      }
+    }, 1000);
+  }
+    
+  }
+
   stopTimer() {
     this.gameState.timerActive = false;
     if (this.timerInterval) {
@@ -159,7 +188,7 @@ questions: any[]  = [];
   this.timerSound.currentTime = 0; // reset
   }
 
-  ngOnDestroy() {
+  ngOnDestroy() {  
     this.stopTimer();
   }
 

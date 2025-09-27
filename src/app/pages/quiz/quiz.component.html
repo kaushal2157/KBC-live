@@ -71,9 +71,14 @@
           </div>
 
           <!-- Score and Progress -->
-          <div class="text-right">
+          <!-- <div class="text-right">
             <p class="text-yellow-400 text-md font-semibold">Question {{ gameState.currentQuestion + 1 }} of {{ questions.length }}</p>
             <p class="text-white text-sm">Category: {{ getCurrentQuestion()?.category }}</p>
+          </div> -->
+
+          <!-- pravakta logo -->
+          <div class="text-right">
+           <img src="pravakta-logo.png" class="w-26" alt="">
           </div>
         </div>
 
@@ -89,7 +94,7 @@
 
           <!-- Central Circle with Timer -->
           <div class="relative">
-            <div class="w-28 h-28 rounded-full border-4 border-yellow-400 bg-black flex items-center justify-center relative overflow-hidden shadow-2xl">
+            <div (click)="pauseAndResumeTimer()" class="w-28 h-28 rounded-full border-4 border-yellow-400 bg-black flex items-center justify-center relative overflow-hidden shadow-2xl">
               <!-- Timer Progress Ring -->
               <svg class="absolute inset-0 w-full h-full transform -rotate-90" viewBox="0 0 128 128">
                 <circle 
@@ -147,8 +152,10 @@
           </div>
         </div>
 
+
+
         <!-- Audience Poll Results (if shown) -->
-        <div *ngIf="showAudiencePoll" class="mb-6 bg-white/10 rounded-lg p-4">
+        <!-- <div *ngIf="showAudiencePoll" class="mb-6 bg-white/10 rounded-lg p-4">
           <h3 class="text-yellow-400 font-bold mb-3">👥 Audience Poll Results:</h3>
           <div class="grid grid-cols-4 gap-2">
             <div *ngFor="let percentage of audiencePollResults; let i = index" 
@@ -158,13 +165,13 @@
               <div class="text-yellow-300 text-sm mt-1">{{ percentage }}%</div>
             </div>
           </div>
-        </div>
+        </div> -->
 
         <!-- Phone a Friend Message (if shown) -->
-        <div *ngIf="phoneAFriendMessage" class="mb-6 bg-green-600/20 border border-green-400 rounded-lg p-4">
+        <!-- <div *ngIf="phoneAFriendMessage" class="mb-6 bg-green-600/20 border border-green-400 rounded-lg p-4">
           <h3 class="text-green-400 font-bold mb-2">📞 Phone a Friend says:</h3>
           <p class="text-white italic">"{{ phoneAFriendMessage }}"</p>
-        </div>
+        </div> -->
 
         <!-- Answer Options -->
         <div class="grid grid-cols-1 md:grid-cols-2 gap-4 mb-8">
@@ -190,11 +197,11 @@
         </div>
 
         <!-- Explanation (if shown) -->
-        <div *ngIf="gameState.showExplanation && getCurrentQuestion()?.explanation" 
+        <!-- <div *ngIf="gameState.showExplanation && getCurrentQuestion()?.explanation" 
              class="mb-6 bg-blue-600/20 border border-blue-400 rounded-lg p-4">
           <h3 class="text-blue-400 font-bold mb-2">💡 Explanation:</h3>
           <p class="text-white">{{ getCurrentQuestion()?.explanation }}</p>
-        </div>
+        </div> -->
 
         <!-- Next Question Button -->
         <div *ngIf="selectedAnswer !== null" class="text-center">
@@ -214,6 +221,10 @@
         </div> -->
       </div>
 
+          <div class="text-gray-400 text-sm text-center md:text-right">
+      © 2025 Pravakta Academy. All Rights Reserved.
+    </div>
+      
       <!-- Lifeline Notification -->
       <div *ngIf="lifelineMessage" 
            class="fixed top-4 right-4 bg-yellow-500 text-black p-4 rounded-lg shadow-lg z-40 animate-bounce">
