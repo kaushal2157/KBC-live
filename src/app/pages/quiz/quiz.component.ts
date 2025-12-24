@@ -73,6 +73,10 @@ questions: any[]  = [];
   Math = Math;
   String = String;
 
+  showOptions: boolean = false;
+timerStarted: boolean = false;
+
+
   ngOnInit() {
 
     this.questionsService.getQuestions().subscribe((data: any[]) => {
@@ -91,13 +95,14 @@ questions: any[]  = [];
     this.questions = this.questions.sort(() => Math.random() - 0.5);
   }
 
-  startGame() {
-    this.gameStarted = true;
-    this.resetGameState();
-    this.startTimer();
-        console.log("length",this.questions.length);
+startGame() {
+  this.gameStarted = true;
+  this.gameState.currentQuestion = 0;
+  this.selectedAnswer = null;
 
-  }
+  this.resetQuestionState();
+}
+
 
   resetGame() {
     this.gameStarted = false;
@@ -131,24 +136,23 @@ questions: any[]  = [];
     this.lifelineMessage = '';
   }
 
-  startTimer() {
-    this.gameState.timeLeft = 60;
-    this.gameState.timerActive = true;
+startTimer() {
+  if (this.timerStarted) return;
 
-    this.timerSound.currentTime = 0;
-    this.timerSound.play();
+  this.timerStarted = true;
+  this.gameState.timerActive = true;
+  this.timerSound.play();
 
-    this.timerInterval = setInterval(() => {
-      if (this.gameState.timeLeft > 0 && this.selectedAnswer === null) {
-        this.gameState.timeLeft--;
-      } else if (this.gameState.timeLeft === 0 && this.selectedAnswer === null) {
-        // Time's up - auto game over
-        this.gameState.gameOver = true;
-        this.stopTimer();
-      }
+  this.timerInterval = setInterval(() => {
+    if (this.gameState.timeLeft > 0) {
+      this.gameState.timeLeft--;
+    } else {
+      clearInterval(this.timerInterval);
+      this.nextQuestion();
+    }
+  }, 1000);
+}
 
-    }, 1000);
-  }
 
   pauseAndResumeTimer(){
  if (this.gameState.timerActive) {
@@ -217,22 +221,31 @@ questions: any[]  = [];
     }
   }
 
-  nextQuestion() {
-    this.clappingSound.pause();    
-    if (this.gameState.currentQuestion < this.questions.length - 1) {
-      this.gameState.currentQuestion++;
-      this.selectedAnswer = null;
-      this.showCorrectAnswer = false;
-      this.hiddenOptions = [];
-      this.showAudiencePoll = false;
-      this.phoneAFriendMessage = '';
-      this.gameState.showExplanation = false;
-      this.startTimer(); // Start timer for next question
-    } else {
-      this.gameState.gameWon = true;
-      this.stopTimer();
-    }
+nextQuestion() {
+  this.selectedAnswer = null;
+  this.gameState.currentQuestion++;
+
+  if (this.gameState.currentQuestion >= this.questions.length) {
+    this.gameState.gameWon = true;
+    return;
   }
+
+  this.resetQuestionState();
+}
+resetQuestionState() {
+  this.showOptions = false;
+  this.timerStarted = false;
+  this.gameState.timeLeft = 60;
+
+  if (this.timerInterval) {
+    clearInterval(this.timerInterval);
+  }
+}
+onShowOptions() {
+  this.showOptions = true;
+  this.startTimer();
+}
+
 
   // Lifeline: 50-50
   useFiftyFifty() {

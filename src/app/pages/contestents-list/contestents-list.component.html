@@ -1,0 +1,26 @@
+<h2 class="text-3xl text-yellow-500 text-center mb-6">
+  Choose Your Contestant
+</h2>
+
+<div class="grid grid-cols-2 md:grid-cols-5 gap-4 max-w-6xl mx-auto">
+  <div *ngFor="let contestant of contestants"
+       (click)="selectContestant(contestant)"
+       class="cursor-pointer bg-white/10 border border-yellow-400
+              rounded-xl p-4 text-center
+              hover:scale-105 transition-all duration-200">
+
+    <div class="w-14 h-14 mx-auto mb-3
+                rounded-full bg-yellow-400 text-black
+                flex items-center justify-center font-bold">
+      {{ contestant.id }}
+    </div>
+
+    <p class="text-yellow-400 font-bold">
+      {{ contestant.name }}
+    </p>
+
+    <p class="text-gray-300 text-sm">
+      {{ contestant.totalQuestions }} Questions
+    </p>
+  </div>
+</div>
