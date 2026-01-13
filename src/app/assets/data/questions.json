@@ -1,0 +1,434 @@
+{
+  "contestants": [
+    {
+      "id": 1,
+      "name": "Contestant 1",
+      "questions": [
+        {
+          "id": 1,
+          "question": "मी काल पासून इंग्लीश बोलत होतो",
+          "options": [
+            "continuous past tense",
+            "perfect past tense",
+            "continuous perfect past tense",
+            "simple past tense"
+          ],
+          "correctAnswer": 0
+        },
+        {
+          "id": 2,
+          "question": "मी इंग्रजी बोलीनच",
+          "options": [
+            "will / shall have to",
+            "can",
+            "have to / has to",
+            "would"
+          ],
+          "correctAnswer": 0
+        },
+        {
+          "id": 3,
+          "question": "I eat ______ orange",
+          "options": ["a", "the", "an", "none"],
+          "correctAnswer": 2
+        },
+        {
+          "id": 4,
+          "question": "तलवार",
+          "options": ["mace", "sword", "virtue", "pistol"],
+          "correctAnswer": 1
+        },
+        {
+          "id": 5,
+          "question": "चाळणी",
+          "options": ["greater", "base", "sieve", "pestle"],
+          "correctAnswer": 2
+        },
+        {
+          "id": 6,
+          "question": "candy floss",
+          "options": ["झुंबर", "अतिमहत्वपूर्ण", "म्हातारीचे केस", "दोरा"],
+          "correctAnswer": 2
+        },
+        {
+          "id": 7,
+          "question": "विजय काल रडत होता",
+          "options": [
+            "simple past tense",
+            "present perfect tense",
+            "continuous past tense",
+            "continuous perfect past tense"
+          ],
+          "correctAnswer": 2
+        },
+        {
+          "id": 8,
+          "question": "रमेश संपूर्ण गावात श्रीमंत आहे",
+          "options": [
+            "positive degree",
+            "superlative degree",
+            "comparative degree",
+            "none"
+          ],
+          "correctAnswer": 1
+        },
+        {
+          "id": 9,
+          "question": "cumin seed",
+          "options": ["मेथी", "धने", "जिरे", "ज्वारी"],
+          "correctAnswer": 2
+        },
+        {
+          "id": 10,
+          "question": "आपण दररोज झाडांना पाणी द्यायला पाहिजे",
+          "options": ["must", "simple past tense", "should", "should have"],
+          "correctAnswer": 2
+        }
+      ]
+    },
+
+    {
+      "id": 2,
+      "name": "Contestant 2",
+      "questions": [
+        {
+          "id": 11,
+          "question": "तुला आमंत्रण दिल जाईल",
+          "options": ["Active Voice", "Passive Voice", "None"],
+          "correctAnswer": 1
+        },
+        {
+          "id": 12,
+          "question": "ईमानदार",
+          "options": ["sensible", "honest", "greedy", "cheater"],
+          "correctAnswer": 1
+        },
+        {
+          "id": 13,
+          "question": "माया छायापेक्षा सुंदर आहे",
+          "options": [
+            "superlative degree",
+            "positive degree",
+            "comparative degree",
+            "none"
+          ],
+          "correctAnswer": 2
+        },
+        {
+          "id": 14,
+          "question": "पवित्र",
+          "options": ["scared", "sacred", "virtue", "holy"],
+          "correctAnswer": 1
+        },
+        {
+          "id": 15,
+          "question": "mace",
+          "options": ["त्रिशूल", "धनुष्य", "तलवार", "गदा"],
+          "correctAnswer": 3
+        },
+        {
+          "id": 16,
+          "question": "मला तेथे जायची गरज नाही",
+          "options": [
+            "I don’t want to go there",
+            "I will not go there",
+            "I could not go there",
+            "I need not go there"
+          ],
+          "correctAnswer": 3
+        },
+        {
+          "id": 17,
+          "question": "divine",
+          "options": ["दैविय", "सद्गुण", "रथ", "अनंत"],
+          "correctAnswer": 0
+        },
+        {
+          "id": 18,
+          "question": "स्वर्ग",
+          "options": ["sin", "heaven", "virtue", "hell"],
+          "correctAnswer": 1
+        },
+        {
+          "id": 19,
+          "question": "प्रथम ला बॅग मिळेल",
+          "options": [
+            "Pratham will going to get a bag",
+            "Pratham will be getting bag",
+            "Pratham will get a bag",
+            "Pratham will have been got a bag"
+          ],
+          "correctAnswer": 2
+        },
+        {
+          "id": 20,
+          "question": "… the sun is hottest planet",
+          "options": ["a", "an", "the", "none"],
+          "correctAnswer": 2
+        }
+      ]
+    },
+
+    {
+      "id": 3,
+      "name": "Contestant 3",
+      "questions": [
+        {
+          "id": 21,
+          "question": "मला गावाला जायच आहे",
+          "options": [
+            "I will go to village",
+            "I must go to village",
+            "I want to go to village",
+            "I would go to village"
+          ],
+          "correctAnswer": 2
+        },
+        {
+          "id": 22,
+          "question": "मी आंबा खाऊ शकली",
+          "options": [
+            "I could eat mango",
+            "I will eat mango",
+            "I was eat mango",
+            "I had eat mango"
+          ],
+          "correctAnswer": 0
+        },
+        {
+          "id": 23,
+          "question": "च्यानंतर",
+          "options": ["after", "before", "with", "to"],
+          "correctAnswer": 0
+        },
+        {
+          "id": 24,
+          "question": "above",
+          "options": ["च्यावर", "च्यविषयी", "च्याशिवाय", "च्यापेक्षा"],
+          "correctAnswer": 0
+        },
+        {
+          "id": 25,
+          "question": "मी महेशला सांगणार होतो",
+          "options": [
+            "I will tell to Mahesh",
+            "I used to tell Mahesh",
+            "I was going to tell Mahesh",
+            "I would tell Mahesh"
+          ],
+          "correctAnswer": 2
+        },
+        {
+          "id": 26,
+          "question": "तुला बोलायची गरज नाही",
+          "options": [
+            "You will not speak",
+            "You should not speak",
+            "You need not speak",
+            "You must have speak"
+          ],
+          "correctAnswer": 2
+        },
+        {
+          "id": 27,
+          "question": "राधिका विश्वास ठेवु शकणार नाही",
+          "options": ["will not", "will should not", "will not able to", "can’t"],
+          "correctAnswer": 2
+        },
+        {
+          "id": 28,
+          "question": "… umbrella is need of rainy season",
+          "options": ["a", "the", "an", "none"],
+          "correctAnswer": 0
+        },
+        {
+          "id": 29,
+          "question": "विजय अभ्यास करू शकत नाही",
+          "options": [
+            "Vijay could not study",
+            "Vijay can’t study",
+            "Vijay will not study",
+            "Vijay should not study"
+          ],
+          "correctAnswer": 1
+        },
+        {
+          "id": 30,
+          "question": "Demi god",
+          "options": ["देव", "पवित्र", "गंधर्व देव", "देवता"],
+          "correctAnswer": 3
+        }
+      ]
+    },
+
+    {
+      "id": 4,
+      "name": "Contestant 4",
+      "questions": [
+        {
+          "id": 31,
+          "question": "मला इंग्रजी बोलायची गरज नाही",
+          "options": ["should not", "have to", "must have", "need not"],
+          "correctAnswer": 3
+        },
+        {
+          "id": 32,
+          "question": "… IPS officer is great man",
+          "options": ["the", "an", "a", "none"],
+          "correctAnswer": 2
+        },
+        {
+          "id": 33,
+          "question": "विश्वास ठेवणे",
+          "options": ["give in", "self", "believe", "above"],
+          "correctAnswer": 2
+        },
+        {
+          "id": 34,
+          "question": "my childhood ____ very nice",
+          "options": ["had", "was", "will", "used to"],
+          "correctAnswer": 1
+        },
+        {
+          "id": 35,
+          "question": "माझ्या भावाच लग्न बाकी आहे",
+          "options": ["remain to", "not", "incomplete", "none"],
+          "correctAnswer": 3
+        },
+        {
+          "id": 36,
+          "question": "मला गाण गाण्याची गरज नाही",
+          "options": ["should", "able to", "need not", "as well as"],
+          "correctAnswer": 2
+        },
+        {
+          "id": 37,
+          "question": "Rakesh is ___ honest boy",
+          "options": ["the", "a", "an", "none"],
+          "correctAnswer": 2
+        },
+        {
+          "id": 38,
+          "question": "लालची",
+          "options": ["sensible", "greedy", "honest", "mature"],
+          "correctAnswer": 1
+        },
+        {
+          "id": 39,
+          "question": "आराध्याला सांगाव लागेल",
+          "options": [
+            "should",
+            "have to",
+            "must have",
+            "will / shall have to"
+          ],
+          "correctAnswer": 3
+        },
+        {
+          "id": 40,
+          "question": "fenugreek seed",
+          "options": ["मेथी", "जिरे", "तांदूळ", "मिरे"],
+          "correctAnswer": 0
+        }
+      ]
+    },
+
+    {
+      "id": 5,
+      "name": "Contestant 5",
+      "questions": [
+        {
+          "id": 41,
+          "question": "च्याबरोबर",
+          "options": ["above", "since", "with", "against"],
+          "correctAnswer": 2
+        },
+        {
+          "id": 42,
+          "question": "I will cry",
+          "options": [
+            "simple present tense",
+            "continuous perfect tense",
+            "simple future tense",
+            "perfect future tense"
+          ],
+          "correctAnswer": 2
+        },
+        {
+          "id": 43,
+          "question": "… Tajmahal is very old",
+          "options": ["an", "a", "the", "none"],
+          "correctAnswer": 2
+        },
+        {
+          "id": 44,
+          "question": "Must",
+          "options": [
+            "करू शकतो",
+            "करायला पाहिजे",
+            "करायलाच पाहिजे",
+            "करिनच"
+          ],
+          "correctAnswer": 2
+        },
+        {
+          "id": 45,
+          "question": "दानव",
+          "options": ["priest", "demon", "god", "goddess"],
+          "correctAnswer": 1
+        },
+        {
+          "id": 46,
+          "question": "माझी आजी आम्हाला गोष्टी सांगायची",
+          "options": [
+            "had tell",
+            "was telling",
+            "was able to tell",
+            "used to tell"
+          ],
+          "correctAnswer": 3
+        },
+        {
+          "id": 47,
+          "question": "sweet potato",
+          "options": ["रताळे", "बटाटे", "गाजर", "भेंडी"],
+          "correctAnswer": 0
+        },
+        {
+          "id": 48,
+          "question": "Mahesh can trust on me",
+          "options": [
+            "करायला पाहिजे",
+            "करू शकतो",
+            "करायला हव होत",
+            "कराव लागत"
+          ],
+          "correctAnswer": 1
+        },
+        {
+          "id": 49,
+          "question": "मी स्वयंपाक करू शकणार",
+          "options": [
+            "I will cook",
+            "I must cook",
+            "I should cook",
+            "I will able to cook"
+          ],
+          "correctAnswer": 0
+        },
+        {
+          "id": 50,
+          "question": "मी स्वयंपाक करू शकणार",
+          "options": [
+            "I will cook",
+            "I must cook",
+            "I should cook",
+            "I will able to cook"
+          ],
+          "correctAnswer": 10
+        }
+        
+      ]
+    }
+  ]
+}
