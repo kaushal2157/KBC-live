@@ -225,6 +225,7 @@ export class QuizComponent {
   nextQuestion() {
     this.selectedAnswer = null;
     this.gameState.currentQuestion++;
+    this.hiddenOptions = [];
 
     if (this.gameState.currentQuestion >= this.questions.length) {
       this.gameState.gameWon = true;

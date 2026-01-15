@@ -22,7 +22,7 @@ export class ContestentsListComponent {
   constructor(private router: Router, private questionService: QuestionsService) {}
 
   ngOnInit(): void {
-      this.questionService.getContestants().subscribe(data => {
+    this.questionService.getContestants().subscribe(data => {
     this.contestants = data;
     console.log('data : ', this.contestants);
     
