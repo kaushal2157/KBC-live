@@ -1,1 +1,12 @@
-<router-outlet></router-outlet>
+<div class="app-wrapper">
+  <!-- Logout Button (visible when authenticated) -->
+  <div *ngIf="isAuthenticated$ | async" class="logout-container">
+    <button class="logout-button" (click)="logout()" title="Logout and return to access control">
+      <span class="logout-icon">⏚</span>
+      Logout
+    </button>
+  </div>
+
+  <!-- Main Application Routes -->
+  <router-outlet></router-outlet>
+</div>

@@ -1,0 +1,67 @@
+<div class="login-container">
+  <div class="login-card">
+    <div class="login-header">
+      <h1>Access Control</h1>
+      <p class="subtitle">Enter your credentials to access the application</p>
+    </div>
+
+    <form [formGroup]="loginForm" (ngSubmit)="onLogin()" class="login-form">
+      <!-- Username Field -->
+      <div class="form-group">
+        <label for="username" class="form-label">Username</label>
+        <input
+          id="username"
+          type="text"
+          formControlName="username"
+          class="form-input"
+          placeholder="Enter username"
+          [class.is-invalid]="username?.invalid && username?.touched"
+          [disabled]="isLoading"
+        />
+        <span *ngIf="username?.invalid && username?.touched" class="error-text">
+          <span *ngIf="username?.hasError('required')">Username is required</span>
+          <span *ngIf="username?.hasError('minlength')">Username must be at least 3 characters</span>
+        </span>
+      </div>
+
+      <!-- Password Field -->
+      <div class="form-group">
+        <label for="password" class="form-label">Password</label>
+        <input
+          id="password"
+          type="password"
+          formControlName="password"
+          class="form-input"
+          placeholder="Enter password"
+          [class.is-invalid]="password?.invalid && password?.touched"
+          [disabled]="isLoading"
+        />
+        <span *ngIf="password?.invalid && password?.touched" class="error-text">
+          <span *ngIf="password?.hasError('required')">Password is required</span>
+          <span *ngIf="password?.hasError('minlength')">Password must be at least 6 characters</span>
+        </span>
+      </div>
+
+      <!-- Error Message -->
+      <div *ngIf="errorMessage" class="error-banner">
+        {{ errorMessage }}
+      </div>
+
+      <!-- Submit Button -->
+      <button
+        type="submit"
+        class="submit-button"
+        [disabled]="loginForm.invalid || isLoading"
+      >
+        <span *ngIf="!isLoading">Access Application</span>
+        <span *ngIf="isLoading">Authenticating...</span>
+      </button>
+    </form>
+
+    <div class="demo-info">
+      <p><strong>Demo Credentials:</strong></p>
+      <p>Username: <code>client</code></p>
+      <p>Password: <code>client&#64;123</code></p>
+    </div>
+  </div>
+</div>
