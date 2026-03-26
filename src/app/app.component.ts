@@ -11,6 +11,8 @@ import { AuthService } from './auth/services/auth.service';
 })
 export class AppComponent {
   title = 'KBC-WEB';
+  fabOpen = false;
+  showLogoutModal = false;
 
   constructor(
     private authService: AuthService,
@@ -25,10 +27,41 @@ export class AppComponent {
   }
 
   /**
-   * Logout user and redirect to login page
+   * Toggle the floating action button menu
    */
-  logout(): void {
+  toggleFab(): void {
+    this.fabOpen = !this.fabOpen;
+  }
+
+  /**
+   * Navigate to a specific route
+   */
+  navigateTo(route: string): void {
+    this.router.navigate([route]);
+    this.fabOpen = false; // Close the FAB menu after navigation
+  }
+
+  /**
+   * Show logout confirmation modal
+   */
+  showLogoutConfirm(): void {
+    this.showLogoutModal = true;
+    this.fabOpen = false; // Close the FAB menu
+  }
+
+  /**
+   * Close logout confirmation modal
+   */
+  closeLogoutModal(): void {
+    this.showLogoutModal = false;
+  }
+
+  /**
+   * Confirm logout and redirect to login page
+   */
+  confirmLogout(): void {
     this.authService.logout();
     this.router.navigate(['/access-login']);
+    this.showLogoutModal = false;
   }
 }

@@ -1,10 +1,43 @@
 <div class="app-wrapper">
-  <!-- Logout Button (visible when authenticated) -->
-  <div *ngIf="isAuthenticated$ | async" class="logout-container">
-    <button class="logout-button" (click)="logout()" title="Logout and return to access control">
-      <span class="logout-icon">⏚</span>
-      Logout
+  <!-- Floating Action Button (visible when authenticated) -->
+  <div *ngIf="isAuthenticated$ | async" class="fab-container">
+    <div class="fab-menu" [class.open]="fabOpen">
+      <button class="fab-item" (click)="navigateTo('')" title="Go to Home">
+        <svg class="fab-icon" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+          <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 12l2-2m0 0l7-7 7 7M5 10v10a1 1 0 001 1h3m10-11l2 2m-2-2v10a1 1 0 01-1 1h-3m-6 0a1 1 0 001-1v-4a1 1 0 011-1h2a1 1 0 011 1v4a1 1 0 001 1m-6 0h6"></path>
+        </svg>
+      </button>
+      <button class="fab-item" (click)="navigateTo('contestents-list')" title="Contestants List">
+        <svg class="fab-icon" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+          <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 4.354a4 4 0 110 5.292M15 21H3v-1a6 6 0 0112 0v1zm0 0h6v-1a6 6 0 00-9-5.197m13.5-9a2.5 2.5 0 11-5 0 2.5 2.5 0 015 0z"></path>
+        </svg>
+      </button>
+      <button class="fab-item logout-fab" (click)="showLogoutConfirm()" title="Logout">
+        <svg class="fab-icon" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+          <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17 16l4-4m0 0l-4-4m4 4H7m6 4v1a3 3 0 01-3 3H6a3 3 0 01-3-3V7a3 3 0 013-3h4a3 3 0 013 3v1"></path>
+        </svg>
+      </button>
+    </div>
+    <button class="fab-main" (click)="toggleFab()" [class.open]="fabOpen">
+      <svg *ngIf="!fabOpen" class="fab-main-icon" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 6v6m0 0v6m0-6h6m-6 0H6"></path>
+      </svg>
+      <svg *ngIf="fabOpen" class="fab-main-icon" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12"></path>
+      </svg>
     </button>
+  </div>
+
+  <!-- Logout Confirmation Modal -->
+  <div *ngIf="showLogoutModal" class="modal-overlay" (click)="closeLogoutModal()">
+    <div class="modal-content" (click)="$event.stopPropagation()">
+      <h3>Confirm Logout</h3>
+      <p>Are you sure you want to logout?</p>
+      <div class="modal-actions">
+        <button class="btn-cancel" (click)="closeLogoutModal()">Cancel</button>
+        <button class="btn-confirm" (click)="confirmLogout()">Logout</button>
+      </div>
+    </div>
   </div>
 
   <!-- Main Application Routes -->

@@ -4,52 +4,204 @@
   min-height: 100vh;
 }
 
-.logout-container {
+/* Floating Action Button Styles */
+.fab-container {
   position: fixed;
-  top: 16px;
-  right: 16px;
+  bottom: 8px;
+  right: 24px;
   z-index: 1000;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 
-.logout-button {
+.fab-main {
+  width: 56px;
+  height: 56px;
+  border-radius: 50%;
+  background-color: #007bff;
+  border: none;
+  color: white;
+  font-size: 24px;
+  font-weight: bold;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  box-shadow: 0 4px 12px rgba(0, 123, 255, 0.3);
   display: flex;
   align-items: center;
-  gap: 8px;
-  padding: 8px 16px;
-  background-color: rgba(231, 76, 60, 0.9);
+  justify-content: center;
+}
+
+.fab-main:hover {
+  background-color: #0056b3;
+  box-shadow: 0 6px 16px rgba(0, 123, 255, 0.4);
+  transform: scale(1.1);
+}
+
+.fab-main.open {
+  transform: rotate(45deg);
+}
+
+.fab-menu {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 16px;
+  opacity: 0;
+  transform: translateY(20px);
+  transition: all 0.3s ease;
+  pointer-events: none;
+}
+
+.fab-menu.open {
+  opacity: 1;
+  transform: translateY(0);
+  pointer-events: auto;
+}
+
+.fab-item {
+  width: 48px;
+  height: 48px;
+  border-radius: 50%;
+  background-color: #ffffff;
+  border: 2px solid #007bff;
+  color: #007bff;
+  font-size: 20px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  margin-bottom: 8px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+}
+
+.fab-item:hover {
+  background-color: #007bff;
   color: white;
+  transform: scale(1.1);
+  box-shadow: 0 4px 12px rgba(0, 123, 255, 0.3);
+}
+
+.fab-item.logout-fab {
+  border-color: #dc3545;
+  color: #dc3545;
+}
+
+.fab-item.logout-fab:hover {
+  background-color: #dc3545;
+  color: white;
+}
+
+.fab-icon {
+  width: 20px;
+  height: 20px;
+  stroke-width: 2;
+}
+
+.fab-main-icon {
+  width: 24px;
+  height: 24px;
+  stroke-width: 2;
+}
+
+/* Modal Styles */
+.modal-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 2000;
+}
+
+.modal-content {
+  background-color: white;
+  padding: 24px;
+  border-radius: 8px;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.3);
+  max-width: 400px;
+  width: 90%;
+  text-align: center;
+}
+
+.modal-content h3 {
+  margin: 0 0 16px 0;
+  color: #333;
+  font-size: 20px;
+}
+
+.modal-content p {
+  margin: 0 0 24px 0;
+  color: #666;
+  font-size: 16px;
+}
+
+.modal-actions {
+  display: flex;
+  gap: 12px;
+  justify-content: center;
+}
+
+.btn-cancel,
+.btn-confirm {
+  padding: 10px 20px;
   border: none;
-  border-radius: 6px;
+  border-radius: 4px;
   font-size: 14px;
   font-weight: 600;
   cursor: pointer;
   transition: all 0.3s ease;
-  box-shadow: 0 4px 12px rgba(231, 76, 60, 0.3);
 }
 
-.logout-button:hover {
-  background-color: #c0392b;
-  box-shadow: 0 6px 16px rgba(231, 76, 60, 0.4);
-  transform: translateY(-1px);
+.btn-cancel {
+  background-color: #6c757d;
+  color: white;
 }
 
-.logout-button:active {
-  transform: translateY(0);
+.btn-cancel:hover {
+  background-color: #5a6268;
 }
 
-.logout-icon {
-  font-size: 16px;
-  font-weight: bold;
+.btn-confirm {
+  background-color: #dc3545;
+  color: white;
 }
 
+.btn-confirm:hover {
+  background-color: #c82333;
+}
+
+/* Responsive Design */
 @media (max-width: 640px) {
-  .logout-container {
-    top: 12px;
-    right: 12px;
+  .fab-container {
+    bottom: 8px;
+    right: 16px;
   }
 
-  .logout-button {
-    padding: 8px 12px;
-    font-size: 12px;
+  .fab-main {
+    width: 48px;
+    height: 48px;
+    font-size: 20px;
+  }
+
+  .fab-item {
+    width: 44px;
+    height: 44px;
+    font-size: 18px;
+  }
+
+  .fab-icon {
+    width: 18px;
+    height: 18px;
+  }
+
+  .fab-main-icon {
+    width: 20px;
+    height: 20px;
   }
 }
