@@ -1,5 +1,10 @@
 <div
-  class="min-h-screen bg-gradient-to-br from-indigo-950 via-purple-950 to-slate-900 flex flex-col items-center justify-center p-3"
+  [class]="
+    'min-h-screen flex flex-col items-center justify-center p-3 bg-gradient-to-br ' +
+    (isTigerTheme
+      ? 'from-amber-950 via-orange-900 to-zinc-900'
+      : 'from-indigo-950 via-purple-950 to-slate-900')
+  "
 >
   <!-- Game Over/Win Screen -->
   <div
@@ -145,9 +150,9 @@
             <p class="text-white text-sm">Category: {{ getCurrentQuestion()?.category }}</p>
           </div> -->
 
-      <!-- pravakta logo -->
+      <!-- Organization logo -->
       <div class="text-right">
-        <img src="pravakta-logo.png" class="w-26" alt="" />
+        <img [src]="branding.logoPath" class="w-26" [alt]="branding.organizationName" />
       </div>
     </div>
 
@@ -437,7 +442,7 @@
   </div>
 
   <div class="text-gray-400 text-sm text-center md:text-right">
-    © 2025 Pravakta Academy. All Rights Reserved.
+    {{ '\u00A9 2025 ' + branding.organizationName + '. All Rights Reserved.' }}
   </div>
 
   <!-- Lifeline Notification -->

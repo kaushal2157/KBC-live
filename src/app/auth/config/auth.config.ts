@@ -5,7 +5,16 @@
  */
 
 export const AUTH_CONFIG = {
-  validUsername: 'client',
-  validPassword: 'client@123',
+  credentials: [
+    // Existing Pravakta credentials (kept for backward compatibility)
+    { username: 'client', password: 'client@123', role: 'pravakta' },
+    // Role-based credentials requested by client
+    { username: 'pravakta academy', password: 'pravakta@123', role: 'pravakta' },
+    { username: 'tigerschool', password: 'tiger@123', role: 'tiger' }
+  ] as const,
   storageLockKey: 'kbc_access_granted',
+  roleStorageKey: 'kbc_selected_role',
+  defaultRole: 'pravakta' as const,
 };
+
+export type UserRole = (typeof AUTH_CONFIG.credentials)[number]['role'];

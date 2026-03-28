@@ -4,6 +4,7 @@ import { QuestionsService } from '../../services/questions.service';
 import { ActivatedRoute } from '@angular/router';
 import { routes } from '../../app.routes';
 import { NEVER } from 'rxjs';
+import { RoleContextService } from '../../services/role-context.service';
 
 interface Question {
   id: number;
@@ -38,6 +39,9 @@ interface GameState {
 })
 export class QuizComponent {
   questionsService = inject(QuestionsService);
+  roleContextService = inject(RoleContextService);
+  branding = this.roleContextService.getBrandingConfig();
+  isTigerTheme = this.roleContextService.getCurrentRole() === 'tiger';
   questions: string | any = [];
 
   gameState: GameState = {

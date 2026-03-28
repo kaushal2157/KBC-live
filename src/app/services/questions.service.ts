@@ -2,18 +2,17 @@ import { HttpClient } from '@angular/common/http';
 import { Injectable } from '@angular/core';
 import { map, Observable } from 'rxjs';
 import { Contestant } from '../models/contestent.model';
+import { RoleContextService } from './role-context.service';
 
 @Injectable({
   providedIn: 'root'
 })
 export class QuestionsService {
-
-  private dataUrl = 'questions.json';
-
-  constructor(private http: HttpClient) {}
+  constructor(private http: HttpClient, private roleContextService: RoleContextService) {}
 
   getContestants(): Observable<Contestant[]> {
-    return this.http.get<any>(this.dataUrl).pipe(
+    const dataUrl = this.roleContextService.getBrandingConfig().questionsFile;
+    return this.http.get<any>(dataUrl).pipe(
       map(data => data.contestants)
     );
   }

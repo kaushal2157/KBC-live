@@ -1,9 +1,21 @@
-<div class="relative min-h-screen bg-white text-gray-900 overflow-hidden">
+<div
+  [class]="
+    'relative min-h-screen text-gray-900 overflow-hidden ' +
+    (isTigerTheme ? 'bg-amber-50' : 'bg-white')
+  "
+>
 
   <!-- Modern Geometric Background -->
   <div class="absolute inset-0">
     <!-- Light gradient base -->
-    <div class="absolute inset-0 bg-gradient-to-br from-gray-50 via-blue-50 to-indigo-100"></div>
+    <div
+      [class]="
+        'absolute inset-0 bg-gradient-to-br ' +
+        (isTigerTheme
+          ? 'from-amber-100 via-orange-50 to-yellow-100'
+          : 'from-gray-50 via-blue-50 to-indigo-100')
+      "
+    ></div>
     
     <!-- Geometric shapes -->
     <!-- <div class="absolute top-20 right-20 w-72 h-72 bg-gradient-to-br from-blue-600/10 to-indigo-600/10 rounded-full blur-3xl"></div>
@@ -23,7 +35,7 @@
       <!-- Pravakta Logo -->
       <div class="flex items-center gap-3 ">
         
-          <img src="pravakta-logo.png" alt="Pravakta Academy" class="w-32 h-full object-contain">
+          <img [src]="branding.logoPath" [alt]="branding.organizationName" class="w-32 h-full object-contain">
    
       </div>
     </div>
@@ -32,7 +44,7 @@
       <!-- KBC Logo -->
       <div class="flex items-center gap-3">
         
-          <img src="kbc_logo.png" alt="KBC Style" class="w-20 h-full object-contain rounded-lg">
+          <img [src]="branding.kbcLogoPath" alt="KBC Style" class="w-20 h-full object-contain rounded-lg">
       </div>
     </div>
   </nav>
@@ -49,8 +61,15 @@
         <span class="block bg-gradient-to-r from-blue-600 via-indigo-600 to-purple-600 bg-clip-text text-transparent">Champion</span>
       </h1> -->
             <h1 class="md:text-4xl font-black mb-8 tracking-tight">
-        <span class="block text-blue-950">Kon Banega English Kaa</span>
-        <span class="block bg-gradient-to-r from-red-500 via-yellow-400 to-red-600 bg-clip-text text-transparent">
+        <span [class]="isTigerTheme ? 'block text-amber-950' : 'block text-blue-950'">{{ branding.heading }}</span>
+        <span
+          [class]="
+            'block bg-gradient-to-r bg-clip-text text-transparent ' +
+            (isTigerTheme
+              ? 'from-amber-700 via-orange-500 to-yellow-600'
+              : 'from-red-500 via-yellow-400 to-red-600')
+          "
+        >
           Champion
         </span>
       </h1>
@@ -75,10 +94,13 @@
         </button>
       </div> -->
             <div class="flex flex-col sm:flex-row items-center justify-center">
-        <button (click)="startQuiz()" 
-          class="bg-red-600 hover:bg-red-700 text-white font-semibold py-4 px-8 rounded-2xl
-                 shadow-lg hover:shadow-xl transition-all duration-300 transform hover:scale-105
-                 flex items-center gap-3 text-lg">
+        <button
+          (click)="startQuiz()"
+          [class]="
+            'text-white font-semibold py-4 px-8 rounded-2xl shadow-lg hover:shadow-xl transition-all duration-300 transform hover:scale-105 flex items-center gap-3 text-lg ' +
+            (isTigerTheme ? 'bg-amber-600 hover:bg-amber-700' : 'bg-red-600 hover:bg-red-700')
+          "
+        >
           Begin Quiz
           <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
             <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" 

@@ -1,6 +1,7 @@
 import { Injectable } from '@angular/core';
 import { BehaviorSubject, Observable } from 'rxjs';
 import { AUTH_CONFIG } from '../config/auth.config';
+import { RoleContextService } from '../../services/role-context.service';
 
 /**
  * Authentication Service
@@ -14,7 +15,7 @@ export class AuthService {
   private isAuthenticatedSubject = new BehaviorSubject<boolean>(this.checkStoredAuth());
   public isAuthenticated$: Observable<boolean> = this.isAuthenticatedSubject.asObservable();
 
-  constructor() {}
+  constructor(private roleContextService: RoleContextService) {}
 
   /**
    * Check if user has previously authenticated (stored in localStorage)
@@ -28,12 +29,18 @@ export class AuthService {
    * Validate credentials and grant access
    */
   authenticate(username: string, password: string): boolean {
-    const isValid =
-      username === AUTH_CONFIG.validUsername &&
-      password === AUTH_CONFIG.validPassword;
+    const normalizedUsername = username?.trim().toLowerCase();
+    const normalizedPassword = password?.trim();
+    const matchedCredential = AUTH_CONFIG.credentials.find(
+      credential =>
+        credential.username.toLowerCase() === normalizedUsername &&
+        credential.password === normalizedPassword
+    );
+    const isValid = Boolean(matchedCredential);
 
-    if (isValid) {
+    if (matchedCredential) {
       localStorage.setItem(AUTH_CONFIG.storageLockKey, 'true');
+      this.roleContextService.setRole(matchedCredential.role);
       this.isAuthenticatedSubject.next(true);
     }
 
@@ -52,6 +59,7 @@ export class AuthService {
    */
   logout(): void {
     localStorage.removeItem(AUTH_CONFIG.storageLockKey);
+    this.roleContextService.clearRole();
     this.isAuthenticatedSubject.next(false);
   }
 }

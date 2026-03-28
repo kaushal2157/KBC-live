@@ -1,14 +1,15 @@
 import { TestBed } from '@angular/core/testing';
 import { AuthService } from './auth.service';
 import { AUTH_CONFIG } from '../config/auth.config';
+import { RoleContextService } from '../../services/role-context.service';
 
 describe('AuthService', () => {
   let service: AuthService;
 
   beforeEach(() => {
     TestBed.configureTestingModule({});
-    service = TestBed.inject(AuthService);
     localStorage.clear();
+    service = TestBed.inject(AuthService);
   });
 
   afterEach(() => {
@@ -27,9 +28,10 @@ describe('AuthService', () => {
   });
 
   it('should authenticate with valid credentials', () => {
+    const pravaktaCredential = AUTH_CONFIG.credentials[0];
     const result = service.authenticate(
-      AUTH_CONFIG.validUsername,
-      AUTH_CONFIG.validPassword
+      pravaktaCredential.username,
+      pravaktaCredential.password
     );
 
     expect(result).toBe(true);
@@ -45,12 +47,14 @@ describe('AuthService', () => {
   });
 
   it('should persist authentication state in localStorage', () => {
-    service.authenticate(AUTH_CONFIG.validUsername, AUTH_CONFIG.validPassword);
+    const pravaktaCredential = AUTH_CONFIG.credentials[0];
+    service.authenticate(pravaktaCredential.username, pravaktaCredential.password);
     expect(localStorage.getItem(AUTH_CONFIG.storageLockKey)).toBe('true');
   });
 
   it('should logout and clear authentication', () => {
-    service.authenticate(AUTH_CONFIG.validUsername, AUTH_CONFIG.validPassword);
+    const pravaktaCredential = AUTH_CONFIG.credentials[0];
+    service.authenticate(pravaktaCredential.username, pravaktaCredential.password);
     service.logout();
 
     expect(service.getIsAuthenticated()).toBe(false);
@@ -59,7 +63,8 @@ describe('AuthService', () => {
 
   it('should restore authentication state from localStorage on instantiation', () => {
     localStorage.setItem(AUTH_CONFIG.storageLockKey, 'true');
-    const newService = new AuthService();
+    const roleContextService = TestBed.inject(RoleContextService);
+    const newService = new AuthService(roleContextService);
 
     expect(newService.getIsAuthenticated()).toBe(true);
   });
@@ -76,6 +81,7 @@ describe('AuthService', () => {
       }
     });
 
-    service.authenticate(AUTH_CONFIG.validUsername, AUTH_CONFIG.validPassword);
+    const pravaktaCredential = AUTH_CONFIG.credentials[0];
+    service.authenticate(pravaktaCredential.username, pravaktaCredential.password);
   });
 });
