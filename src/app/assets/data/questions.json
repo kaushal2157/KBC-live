@@ -418,16 +418,15 @@
         },
         {
           "id": 50,
-          "question": "मी स्वयंपाक करू शकणार",
+          "question": "He has been studying ___ morning.",
           "options": [
-            "I will cook",
-            "I must cook",
-            "I should cook",
-            "I will able to cook"
+            "since",
+            "for",
+            "during",
+            "from"
           ],
-          "correctAnswer": 10
+          "correctAnswer": 0
         }
-        
       ]
     }
   ]

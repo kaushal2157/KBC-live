@@ -1,4 +1,9 @@
 {
+  "event": "KON BANEGA GEMS",
+  "school": "TIGER INTERNATIONAL SCHOOL, PAROLA",
+  "session": "2026-27",
+  "dates": "April 5 to 10",
+  "time": "7:00 PM – 9:00 PM",
   "contestants": [
     {
       "id": 1,
@@ -7,111 +12,61 @@
         {
           "id": 1,
           "question": "He ___ going to school.",
-          "options": [
-            "is",
-            "are",
-            "am",
-            "be"
-          ],
+          "options": ["is", "are", "am", "be"],
           "correctAnswer": 0
         },
         {
           "id": 2,
           "question": "National animal of India?",
-          "options": [
-            "Lion",
-            "Tiger",
-            "Elephant",
-            "Horse"
-          ],
+          "options": ["Lion", "Tiger", "Elephant", "Horse"],
           "correctAnswer": 1
         },
         {
           "id": 3,
-          "question": "25 \u00d7 12 = ?",
-          "options": [
-            "250",
-            "275",
-            "300",
-            "325"
-          ],
+          "question": "25 × 12 = ?",
+          "options": ["250", "275", "300", "325"],
           "correctAnswer": 2
         },
         {
           "id": 4,
           "question": "Which gas is used in photosynthesis?",
-          "options": [
-            "Oxygen",
-            "Carbon dioxide",
-            "Nitrogen",
-            "Hydrogen"
-          ],
+          "options": ["Oxygen", "Carbon dioxide", "Nitrogen", "Hydrogen"],
           "correctAnswer": 1
         },
         {
           "id": 5,
           "question": "Which is the smallest continent?",
-          "options": [
-            "Europe",
-            "Australia",
-            "Antarctica",
-            "South America"
-          ],
+          "options": ["Europe", "Australia", "Antarctica", "South America"],
           "correctAnswer": 1
         },
         {
           "id": 6,
-          "question": "Choose correct article: \u201c___ honest man\u201d",
-          "options": [
-            "A",
-            "An",
-            "The",
-            "No article"
-          ],
+          "question": "Choose correct article: '___ honest man'",
+          "options": ["A", "An", "The", "No article"],
           "correctAnswer": 1
         },
         {
           "id": 7,
           "question": "3/5 of 50 = ?",
-          "options": [
-            "20",
-            "25",
-            "30",
-            "35"
-          ],
+          "options": ["20", "25", "30", "35"],
           "correctAnswer": 2
         },
         {
           "id": 8,
           "question": "Which organ pumps blood?",
-          "options": [
-            "Brain",
-            "Heart",
-            "Lung",
-            "Liver"
-          ],
+          "options": ["Brain", "Heart", "Lung", "Liver"],
           "correctAnswer": 1
         },
         {
           "id": 9,
-          "question": "Opposite of \u2018ancient\u2019?",
-          "options": [
-            "Old",
-            "Modern",
-            "Antique",
-            "Historic"
-          ],
+          "question": "Opposite of 'ancient'?",
+          "options": ["Old", "Modern", "Antique", "Historic"],
           "correctAnswer": 1
         },
         {
           "id": 10,
           "question": "Which is the largest mammal?",
-          "options": [
-            "Elephant",
-            "Blue Whale",
-            "Giraffe",
-            "Shark"
-          ],
+          "options": ["Elephant", "Blue Whale", "Giraffe", "Shark"],
           "correctAnswer": 1
         }
       ]
@@ -122,22 +77,17 @@
       "questions": [
         {
           "id": 11,
-          "question": "144 \u00f7 12 = ?",
-          "options": [
-            "10",
-            "11",
-            "12",
-            "13"
-          ],
+          "question": "144 ÷ 12 = ?",
+          "options": ["10", "11", "12", "13"],
           "correctAnswer": 2
         },
         {
           "id": 12,
           "question": "Choose correct sentence:",
           "options": [
-            "She don\u2019t like apples",
-            "She doesn\u2019t likes apples",
-            "She doesn\u2019t like apples",
+            "She don't like apples",
+            "She doesn't likes apples",
+            "She doesn't like apples",
             "She not like apples"
           ],
           "correctAnswer": 2
@@ -145,89 +95,49 @@
         {
           "id": 13,
           "question": "Which is a conductor?",
-          "options": [
-            "Plastic",
-            "Rubber",
-            "Copper",
-            "Wood"
-          ],
+          "options": ["Plastic", "Rubber", "Copper", "Wood"],
           "correctAnswer": 2
         },
         {
           "id": 14,
           "question": "Capital of Australia?",
-          "options": [
-            "Sydney",
-            "Melbourne",
-            "Canberra",
-            "Perth"
-          ],
+          "options": ["Sydney", "Melbourne", "Canberra", "Perth"],
           "correctAnswer": 2
         },
         {
           "id": 15,
           "question": "She ___ happy.",
-          "options": [
-            "is",
-            "are",
-            "am",
-            "be"
-          ],
+          "options": ["is", "are", "am", "be"],
           "correctAnswer": 0
         },
         {
           "id": 16,
           "question": "10% of 200 = ?",
-          "options": [
-            "10",
-            "20",
-            "30",
-            "40"
-          ],
+          "options": ["10", "20", "30", "40"],
           "correctAnswer": 1
         },
         {
           "id": 17,
           "question": "Which is the fastest land animal?",
-          "options": [
-            "Lion",
-            "Tiger",
-            "Cheetah",
-            "Leopard"
-          ],
+          "options": ["Lion", "Tiger", "Cheetah", "Leopard"],
           "correctAnswer": 2
         },
         {
           "id": 18,
-          "question": "Identify tense: \u201cShe has finished her work.\u201d",
-          "options": [
-            "Past",
-            "Present perfect",
-            "Future",
-            "Past continuous"
-          ],
+          "question": "Identify tense: 'She has finished her work.'",
+          "options": ["Past", "Present perfect", "Future", "Past continuous"],
           "correctAnswer": 1
         },
         {
           "id": 19,
           "question": "Which is renewable energy?",
-          "options": [
-            "Coal",
-            "Petrol",
-            "Solar",
-            "Diesel"
-          ],
+          "options": ["Coal", "Petrol", "Solar", "Diesel"],
           "correctAnswer": 2
         },
         {
           "id": 20,
           "question": "Which is the national fruit of India?",
-          "options": [
-            "Apple",
-            "Mango",
-            "Banana",
-            "Orange"
-          ],
+          "options": ["Apple", "Mango", "Banana", "Orange"],
           "correctAnswer": 1
         }
       ]
@@ -238,112 +148,62 @@
       "questions": [
         {
           "id": 21,
-          "question": "He ___ going to school.",
-          "options": [
-            "is",
-            "are",
-            "am",
-            "be"
-          ],
+          "question": "0.5 + 0.25 = ?",
+          "options": ["0.75", "0.5", "1", "0.25"],
           "correctAnswer": 0
         },
         {
           "id": 22,
-          "question": "National animal of India?",
-          "options": [
-            "Lion",
-            "Tiger",
-            "Elephant",
-            "Horse"
-          ],
+          "question": "Which is the longest river in the world?",
+          "options": ["Ganga", "Nile", "Amazon", "Yangtze"],
           "correctAnswer": 1
         },
         {
           "id": 23,
-          "question": "25 \u00d7 12 = ?",
-          "options": [
-            "250",
-            "275",
-            "300",
-            "325"
-          ],
-          "correctAnswer": 2
+          "question": "'Run' is a?",
+          "options": ["Noun", "Verb", "Adjective", "Pronoun"],
+          "correctAnswer": 1
         },
         {
           "id": 24,
-          "question": "Which gas is used in photosynthesis?",
-          "options": [
-            "Oxygen",
-            "Carbon dioxide",
-            "Nitrogen",
-            "Hydrogen"
-          ],
+          "question": "Which gas is most abundant in air?",
+          "options": ["Oxygen", "Nitrogen", "CO₂", "Hydrogen"],
           "correctAnswer": 1
         },
         {
           "id": 25,
-          "question": "Which is the smallest continent?",
-          "options": [
-            "Europe",
-            "Australia",
-            "Antarctica",
-            "South America"
-          ],
+          "question": "7² = ?",
+          "options": ["14", "49", "21", "28"],
           "correctAnswer": 1
         },
         {
           "id": 26,
-          "question": "Choose correct article: \u201c___ honest man\u201d",
-          "options": [
-            "A",
-            "An",
-            "The",
-            "No article"
-          ],
+          "question": "Which is the hottest planet?",
+          "options": ["Mercury", "Venus", "Mars", "Jupiter"],
           "correctAnswer": 1
         },
         {
           "id": 27,
-          "question": "3/5 of 50 = ?",
-          "options": [
-            "20",
-            "25",
-            "30",
-            "35"
-          ],
-          "correctAnswer": 2
-        },
-        {
-          "id": 28,
-          "question": "Which organ pumps blood?",
-          "options": [
-            "Brain",
-            "Heart",
-            "Lung",
-            "Liver"
-          ],
+          "question": "Choose correct preposition: 'He is afraid ___ dogs.'",
+          "options": ["from", "of", "with", "on"],
           "correctAnswer": 1
         },
         {
+          "id": 28,
+          "question": "120 ÷ 5 = ?",
+          "options": ["20", "22", "24", "25"],
+          "correctAnswer": 2
+        },
+        {
           "id": 29,
-          "question": "Opposite of \u2018ancient\u2019?",
-          "options": [
-            "Old",
-            "Modern",
-            "Antique",
-            "Historic"
-          ],
+          "question": "Which is the largest democracy?",
+          "options": ["USA", "India", "UK", "Australia"],
           "correctAnswer": 1
         },
         {
           "id": 30,
-          "question": "Which is the largest mammal?",
-          "options": [
-            "Elephant",
-            "Blue Whale",
-            "Giraffe",
-            "Shark"
-          ],
+          "question": "Identify adverb:",
+          "options": ["Slow", "Slowly", "Slower", "Slowest"],
           "correctAnswer": 1
         }
       ]
@@ -354,112 +214,62 @@
       "questions": [
         {
           "id": 31,
-          "question": "144 \u00f7 12 = ?",
-          "options": [
-            "10",
-            "11",
-            "12",
-            "13"
-          ],
+          "question": "Which planet has rings?",
+          "options": ["Mars", "Jupiter", "Saturn", "Venus"],
           "correctAnswer": 2
         },
         {
           "id": 32,
-          "question": "Choose correct sentence:",
-          "options": [
-            "She don\u2019t like apples",
-            "She doesn\u2019t likes apples",
-            "She doesn\u2019t like apples",
-            "She not like apples"
-          ],
+          "question": "Area of square (side=4)?",
+          "options": ["8", "12", "16", "20"],
           "correctAnswer": 2
         },
         {
           "id": 33,
-          "question": "Which is a conductor?",
-          "options": [
-            "Plastic",
-            "Rubber",
-            "Copper",
-            "Wood"
-          ],
+          "question": "Which is chemical change?",
+          "options": ["Melting", "Freezing", "Burning", "Cutting"],
           "correctAnswer": 2
         },
         {
           "id": 34,
-          "question": "Capital of Australia?",
-          "options": [
-            "Sydney",
-            "Melbourne",
-            "Canberra",
-            "Perth"
-          ],
-          "correctAnswer": 2
+          "question": "Synonym of 'rapid'?",
+          "options": ["Slow", "Fast", "Weak", "Late"],
+          "correctAnswer": 1
         },
         {
           "id": 35,
-          "question": "She ___ happy.",
-          "options": [
-            "is",
-            "are",
-            "am",
-            "be"
-          ],
-          "correctAnswer": 0
+          "question": "Which is the largest continent?",
+          "options": ["Africa", "Asia", "Europe", "Antarctica"],
+          "correctAnswer": 1
         },
         {
           "id": 36,
-          "question": "10% of 200 = ?",
-          "options": [
-            "10",
-            "20",
-            "30",
-            "40"
-          ],
-          "correctAnswer": 1
-        },
-        {
-          "id": 37,
-          "question": "Which is the fastest land animal?",
-          "options": [
-            "Lion",
-            "Tiger",
-            "Cheetah",
-            "Leopard"
-          ],
+          "question": "15% of 200 = ?",
+          "options": ["20", "25", "30", "35"],
           "correctAnswer": 2
         },
         {
-          "id": 38,
-          "question": "Identify tense: \u201cShe has finished her work.\u201d",
-          "options": [
-            "Past",
-            "Present perfect",
-            "Future",
-            "Past continuous"
-          ],
+          "id": 37,
+          "question": "Choose correct conjunction: 'I was tired ___ I slept early.'",
+          "options": ["but", "so", "because", "although"],
           "correctAnswer": 1
         },
         {
+          "id": 38,
+          "question": "Which is the largest ocean?",
+          "options": ["Atlantic", "Indian", "Pacific", "Arctic"],
+          "correctAnswer": 2
+        },
+        {
           "id": 39,
-          "question": "Which is renewable energy?",
-          "options": [
-            "Coal",
-            "Petrol",
-            "Solar",
-            "Diesel"
-          ],
+          "question": "Which is the unit of force?",
+          "options": ["Joule", "Watt", "Newton", "Volt"],
           "correctAnswer": 2
         },
         {
           "id": 40,
-          "question": "Which is the national fruit of India?",
-          "options": [
-            "Apple",
-            "Mango",
-            "Banana",
-            "Orange"
-          ],
+          "question": "Which is the smallest bone?",
+          "options": ["Femur", "Stapes", "Tibia", "Skull"],
           "correctAnswer": 1
         }
       ]
@@ -470,112 +280,62 @@
       "questions": [
         {
           "id": 41,
-          "question": "He ___ going to school.",
-          "options": [
-            "is",
-            "are",
-            "am",
-            "be"
-          ],
-          "correctAnswer": 0
-        },
-        {
-          "id": 42,
-          "question": "National animal of India?",
-          "options": [
-            "Lion",
-            "Tiger",
-            "Elephant",
-            "Horse"
-          ],
+          "question": "9 × 9 = ?",
+          "options": ["72", "81", "90", "99"],
           "correctAnswer": 1
         },
         {
-          "id": 43,
-          "question": "25 \u00d7 12 = ?",
-          "options": [
-            "250",
-            "275",
-            "300",
-            "325"
-          ],
+          "id": 42,
+          "question": "Which is a mammal?",
+          "options": ["Fish", "Snake", "Whale", "Frog"],
           "correctAnswer": 2
         },
         {
+          "id": 43,
+          "question": "He ___ to school daily.",
+          "options": ["go", "goes", "going", "gone"],
+          "correctAnswer": 1
+        },
+        {
           "id": 44,
-          "question": "Which gas is used in photosynthesis?",
-          "options": [
-            "Oxygen",
-            "Carbon dioxide",
-            "Nitrogen",
-            "Hydrogen"
-          ],
+          "question": "Which is the capital of USA?",
+          "options": ["New York", "Washington D.C.", "Chicago", "Boston"],
           "correctAnswer": 1
         },
         {
           "id": 45,
-          "question": "Which is the smallest continent?",
-          "options": [
-            "Europe",
-            "Australia",
-            "Antarctica",
-            "South America"
-          ],
+          "question": "Speed = ?",
+          "options": ["D×T", "D÷T", "T÷D", "None"],
           "correctAnswer": 1
         },
         {
           "id": 46,
-          "question": "Choose correct article: \u201c___ honest man\u201d",
-          "options": [
-            "A",
-            "An",
-            "The",
-            "No article"
-          ],
-          "correctAnswer": 1
+          "question": "Which is an insulator?",
+          "options": ["Copper", "Iron", "Plastic", "Silver"],
+          "correctAnswer": 2
         },
         {
           "id": 47,
-          "question": "3/5 of 50 = ?",
-          "options": [
-            "20",
-            "25",
-            "30",
-            "35"
-          ],
+          "question": "81 ÷ 9 = ?",
+          "options": ["7", "8", "9", "10"],
           "correctAnswer": 2
         },
         {
           "id": 48,
-          "question": "Which organ pumps blood?",
-          "options": [
-            "Brain",
-            "Heart",
-            "Lung",
-            "Liver"
-          ],
-          "correctAnswer": 1
+          "question": "Choose correct modal: 'You ___ obey your parents.'",
+          "options": ["can", "may", "must", "might"],
+          "correctAnswer": 2
         },
         {
           "id": 49,
-          "question": "Opposite of \u2018ancient\u2019?",
-          "options": [
-            "Old",
-            "Modern",
-            "Antique",
-            "Historic"
-          ],
+          "question": "Which gas is released in photosynthesis?",
+          "options": ["CO₂", "O₂", "N₂", "H₂"],
           "correctAnswer": 1
         },
         {
           "id": 50,
-          "question": "Which is the largest mammal?",
-          "options": [
-            "Elephant",
-            "Blue Whale",
-            "Giraffe",
-            "Shark"
-          ],
+          "question": "50 – 25 = ?",
+          "options": ["20", "25", "30", "35"],
           "correctAnswer": 1
         }
       ]
@@ -586,112 +346,62 @@
       "questions": [
         {
           "id": 51,
-          "question": "144 \u00f7 12 = ?",
-          "options": [
-            "10",
-            "11",
-            "12",
-            "13"
-          ],
-          "correctAnswer": 2
+          "question": "Identify pronoun:",
+          "options": ["Table", "He", "Run", "Blue"],
+          "correctAnswer": 1
         },
         {
           "id": 52,
-          "question": "Choose correct sentence:",
-          "options": [
-            "She don\u2019t like apples",
-            "She doesn\u2019t likes apples",
-            "She doesn\u2019t like apples",
-            "She not like apples"
-          ],
-          "correctAnswer": 2
+          "question": "Which is the largest bird?",
+          "options": ["Eagle", "Ostrich", "Peacock", "Crow"],
+          "correctAnswer": 1
         },
         {
           "id": 53,
-          "question": "Which is a conductor?",
-          "options": [
-            "Plastic",
-            "Rubber",
-            "Copper",
-            "Wood"
-          ],
-          "correctAnswer": 2
+          "question": "7 × 6 = ?",
+          "options": ["36", "42", "48", "54"],
+          "correctAnswer": 1
         },
         {
           "id": 54,
-          "question": "Capital of Australia?",
-          "options": [
-            "Sydney",
-            "Melbourne",
-            "Canberra",
-            "Perth"
-          ],
-          "correctAnswer": 2
+          "question": "Which planet is closest to the Sun?",
+          "options": ["Venus", "Mercury", "Earth", "Mars"],
+          "correctAnswer": 1
         },
         {
           "id": 55,
-          "question": "She ___ happy.",
-          "options": [
-            "is",
-            "are",
-            "am",
-            "be"
-          ],
-          "correctAnswer": 0
+          "question": "Choose correct preposition: 'He is sitting ___ the chair.'",
+          "options": ["in", "on", "at", "over"],
+          "correctAnswer": 1
         },
         {
           "id": 56,
-          "question": "10% of 200 = ?",
-          "options": [
-            "10",
-            "20",
-            "30",
-            "40"
-          ],
+          "question": "1 km = ? meters",
+          "options": ["100", "1000", "10", "10000"],
           "correctAnswer": 1
         },
         {
           "id": 57,
-          "question": "Which is the fastest land animal?",
-          "options": [
-            "Lion",
-            "Tiger",
-            "Cheetah",
-            "Leopard"
-          ],
+          "question": "Which is the hardest substance?",
+          "options": ["Gold", "Iron", "Diamond", "Silver"],
           "correctAnswer": 2
         },
         {
           "id": 58,
-          "question": "Identify tense: \u201cShe has finished her work.\u201d",
-          "options": [
-            "Past",
-            "Present perfect",
-            "Future",
-            "Past continuous"
-          ],
-          "correctAnswer": 1
+          "question": "'Quickly' is a?",
+          "options": ["Noun", "Verb", "Adverb", "Adjective"],
+          "correctAnswer": 2
         },
         {
           "id": 59,
-          "question": "Which is renewable energy?",
-          "options": [
-            "Coal",
-            "Petrol",
-            "Solar",
-            "Diesel"
-          ],
+          "question": "Which is a physical change?",
+          "options": ["Burning", "Rusting", "Melting", "Cooking"],
           "correctAnswer": 2
         },
         {
           "id": 60,
-          "question": "Which is the national fruit of India?",
-          "options": [
-            "Apple",
-            "Mango",
-            "Banana",
-            "Orange"
-          ],
+          "question": "36 ÷ 6 = ?",
+          "options": ["5", "6", "7", "8"],
           "correctAnswer": 1
         }
       ]
@@ -702,112 +412,62 @@
       "questions": [
         {
           "id": 61,
-          "question": "He ___ going to school.",
-          "options": [
-            "is",
-            "are",
-            "am",
-            "be"
-          ],
+          "question": "Choose correct conjunction: 'I will come ___ you call me.'",
+          "options": ["if", "but", "so", "and"],
           "correctAnswer": 0
         },
         {
           "id": 62,
-          "question": "National animal of India?",
-          "options": [
-            "Lion",
-            "Tiger",
-            "Elephant",
-            "Horse"
-          ],
-          "correctAnswer": 1
+          "question": "Which is the national tree of India?",
+          "options": ["Neem", "Mango", "Banyan", "Coconut"],
+          "correctAnswer": 2
         },
         {
           "id": 63,
-          "question": "25 \u00d7 12 = ?",
-          "options": [
-            "250",
-            "275",
-            "300",
-            "325"
-          ],
+          "question": "8² = ?",
+          "options": ["16", "32", "64", "48"],
           "correctAnswer": 2
         },
         {
           "id": 64,
-          "question": "Which gas is used in photosynthesis?",
-          "options": [
-            "Oxygen",
-            "Carbon dioxide",
-            "Nitrogen",
-            "Hydrogen"
-          ],
-          "correctAnswer": 1
-        },
-        {
-          "id": 65,
-          "question": "Which is the smallest continent?",
-          "options": [
-            "Europe",
-            "Australia",
-            "Antarctica",
-            "South America"
-          ],
-          "correctAnswer": 1
-        },
-        {
-          "id": 66,
-          "question": "Choose correct article: \u201c___ honest man\u201d",
-          "options": [
-            "A",
-            "An",
-            "The",
-            "No article"
-          ],
-          "correctAnswer": 1
-        },
-        {
-          "id": 67,
-          "question": "3/5 of 50 = ?",
-          "options": [
-            "20",
-            "25",
-            "30",
-            "35"
-          ],
+          "question": "Which is a renewable source?",
+          "options": ["Coal", "Petrol", "Solar", "Diesel"],
           "correctAnswer": 2
         },
         {
+          "id": 65,
+          "question": "Identify tense: 'She will go.'",
+          "options": ["Past", "Present", "Future", "Perfect"],
+          "correctAnswer": 2
+        },
+        {
+          "id": 66,
+          "question": "45 + 55 = ?",
+          "options": ["90", "95", "100", "105"],
+          "correctAnswer": 2
+        },
+        {
+          "id": 67,
+          "question": "Which organ helps in breathing?",
+          "options": ["Heart", "Lungs", "Kidney", "Liver"],
+          "correctAnswer": 1
+        },
+        {
           "id": 68,
-          "question": "Which organ pumps blood?",
-          "options": [
-            "Brain",
-            "Heart",
-            "Lung",
-            "Liver"
-          ],
+          "question": "Choose correct article: '___ apple a day…'",
+          "options": ["A", "An", "The", "None"],
           "correctAnswer": 1
         },
         {
           "id": 69,
-          "question": "Opposite of \u2018ancient\u2019?",
-          "options": [
-            "Old",
-            "Modern",
-            "Antique",
-            "Historic"
-          ],
+          "question": "Which is the national bird of India?",
+          "options": ["Sparrow", "Peacock", "Crow", "Parrot"],
           "correctAnswer": 1
         },
         {
           "id": 70,
-          "question": "Which is the largest mammal?",
-          "options": [
-            "Elephant",
-            "Blue Whale",
-            "Giraffe",
-            "Shark"
-          ],
+          "question": "90 ÷ 10 = ?",
+          "options": ["8", "9", "10", "11"],
           "correctAnswer": 1
         }
       ]
@@ -818,112 +478,62 @@
       "questions": [
         {
           "id": 71,
-          "question": "144 \u00f7 12 = ?",
-          "options": [
-            "10",
-            "11",
-            "12",
-            "13"
-          ],
-          "correctAnswer": 2
+          "question": "Which is the fastest bird?",
+          "options": ["Eagle", "Falcon", "Sparrow", "Owl"],
+          "correctAnswer": 1
         },
         {
           "id": 72,
-          "question": "Choose correct sentence:",
-          "options": [
-            "She don\u2019t like apples",
-            "She doesn\u2019t likes apples",
-            "She doesn\u2019t like apples",
-            "She not like apples"
-          ],
+          "question": "'Beautiful' is a?",
+          "options": ["Noun", "Verb", "Adjective", "Adverb"],
           "correctAnswer": 2
         },
         {
           "id": 73,
-          "question": "Which is a conductor?",
-          "options": [
-            "Plastic",
-            "Rubber",
-            "Copper",
-            "Wood"
-          ],
-          "correctAnswer": 2
+          "question": "Which vitamin is from sunlight?",
+          "options": ["A", "B", "C", "D"],
+          "correctAnswer": 3
         },
         {
           "id": 74,
-          "question": "Capital of Australia?",
-          "options": [
-            "Sydney",
-            "Melbourne",
-            "Canberra",
-            "Perth"
-          ],
+          "question": "3 × 15 = ?",
+          "options": ["30", "35", "45", "50"],
           "correctAnswer": 2
         },
         {
           "id": 75,
-          "question": "She ___ happy.",
-          "options": [
-            "is",
-            "are",
-            "am",
-            "be"
-          ],
-          "correctAnswer": 0
+          "question": "Which is the largest ocean?",
+          "options": ["Atlantic", "Indian", "Pacific", "Arctic"],
+          "correctAnswer": 2
         },
         {
           "id": 76,
-          "question": "10% of 200 = ?",
-          "options": [
-            "10",
-            "20",
-            "30",
-            "40"
-          ],
+          "question": "Choose correct verb: 'She ___ a book.'",
+          "options": ["read", "reads", "reading", "readed"],
           "correctAnswer": 1
         },
         {
           "id": 77,
-          "question": "Which is the fastest land animal?",
-          "options": [
-            "Lion",
-            "Tiger",
-            "Cheetah",
-            "Leopard"
-          ],
-          "correctAnswer": 2
-        },
-        {
-          "id": 78,
-          "question": "Identify tense: \u201cShe has finished her work.\u201d",
-          "options": [
-            "Past",
-            "Present perfect",
-            "Future",
-            "Past continuous"
-          ],
+          "question": "Which is a reptile?",
+          "options": ["Dog", "Snake", "Cow", "Cat"],
           "correctAnswer": 1
         },
         {
-          "id": 79,
-          "question": "Which is renewable energy?",
-          "options": [
-            "Coal",
-            "Petrol",
-            "Solar",
-            "Diesel"
-          ],
+          "id": 78,
+          "question": "200 + 300 = ?",
+          "options": ["400", "450", "500", "550"],
           "correctAnswer": 2
         },
         {
+          "id": 79,
+          "question": "Which is the national flower of India?",
+          "options": ["Rose", "Lotus", "Lily", "Sunflower"],
+          "correctAnswer": 1
+        },
+        {
           "id": 80,
-          "question": "Which is the national fruit of India?",
-          "options": [
-            "Apple",
-            "Mango",
-            "Banana",
-            "Orange"
-          ],
+          "question": "Identify tense: 'He was playing.'",
+          "options": ["Present", "Past continuous", "Future", "Past perfect"],
           "correctAnswer": 1
         }
       ]
@@ -934,112 +544,77 @@
       "questions": [
         {
           "id": 81,
-          "question": "He ___ going to school.",
+          "question": "Choose correct modal: 'You ___ obey your parents.'",
+          "options": ["can", "may", "must", "might"],
+          "correctAnswer": 2
+        },
+        {
+          "id": 82,
+          "question": "Choose correct degree: 'Mount Everest is ___ mountain.'",
+          "options": ["high", "higher", "highest", "more high"],
+          "correctAnswer": 2
+        },
+        {
+          "id": 83,
+          "question": "Active to passive: 'She writes a letter.'",
           "options": [
-            "is",
-            "are",
-            "am",
-            "be"
+            "A letter is written by her",
+            "A letter was written",
+            "A letter writes",
+            "A letter has written"
           ],
           "correctAnswer": 0
         },
         {
-          "id": 82,
-          "question": "National animal of India?",
-          "options": [
-            "Lion",
-            "Tiger",
-            "Elephant",
-            "Horse"
-          ],
-          "correctAnswer": 1
-        },
-        {
-          "id": 83,
-          "question": "25 \u00d7 12 = ?",
-          "options": [
-            "250",
-            "275",
-            "300",
-            "325"
-          ],
-          "correctAnswer": 2
-        },
-        {
           "id": 84,
-          "question": "Which gas is used in photosynthesis?",
+          "question": "Reported speech: He said, 'I am tired.'",
           "options": [
-            "Oxygen",
-            "Carbon dioxide",
-            "Nitrogen",
-            "Hydrogen"
+            "He said he was tired",
+            "He says he tired",
+            "He said I tired",
+            "He was said tired"
           ],
-          "correctAnswer": 1
+          "correctAnswer": 0
         },
         {
           "id": 85,
-          "question": "Which is the smallest continent?",
-          "options": [
-            "Europe",
-            "Australia",
-            "Antarctica",
-            "South America"
-          ],
+          "question": "Choose correct preposition: 'She is fond ___ music.'",
+          "options": ["on", "of", "with", "for"],
           "correctAnswer": 1
         },
         {
           "id": 86,
-          "question": "Choose correct article: \u201c___ honest man\u201d",
-          "options": [
-            "A",
-            "An",
-            "The",
-            "No article"
-          ],
-          "correctAnswer": 1
+          "question": "Identify conjunction:",
+          "options": ["And", "Run", "Blue", "Dog"],
+          "correctAnswer": 0
         },
         {
           "id": 87,
-          "question": "3/5 of 50 = ?",
-          "options": [
-            "20",
-            "25",
-            "30",
-            "35"
-          ],
-          "correctAnswer": 2
+          "question": "Choose correct article: '___ university'",
+          "options": ["a", "an", "the", "none"],
+          "correctAnswer": 0
         },
         {
           "id": 88,
-          "question": "Which organ pumps blood?",
-          "options": [
-            "Brain",
-            "Heart",
-            "Lung",
-            "Liver"
-          ],
-          "correctAnswer": 1
+          "question": "Identify interjection:",
+          "options": ["Wow!", "Run", "Blue", "Eat"],
+          "correctAnswer": 0
         },
         {
           "id": 89,
-          "question": "Opposite of \u2018ancient\u2019?",
+          "question": "Choose correct sentence:",
           "options": [
-            "Old",
-            "Modern",
-            "Antique",
-            "Historic"
+            "He go to school",
+            "He goes to school",
+            "He going school",
+            "He gone school"
           ],
           "correctAnswer": 1
         },
         {
           "id": 90,
-          "question": "Which is the largest mammal?",
-          "options": [
-            "Elephant",
-            "Blue Whale",
-            "Giraffe",
-            "Shark"
-          ],
+          "question": "Choose correct form: 'She ___ already eaten.'",
+          "options": ["have", "has", "had", "having"],
           "correctAnswer": 1
         }
       ]
@@ -1050,112 +625,72 @@
       "questions": [
         {
           "id": 91,
-          "question": "144 \u00f7 12 = ?",
+          "question": "Identify passive voice:",
           "options": [
-            "10",
-            "11",
-            "12",
-            "13"
+            "He eats food",
+            "Food is eaten by him",
+            "He eating food",
+            "He ate food"
           ],
-          "correctAnswer": 2
+          "correctAnswer": 1
         },
         {
           "id": 92,
-          "question": "Choose correct sentence:",
-          "options": [
-            "She don\u2019t like apples",
-            "She doesn\u2019t likes apples",
-            "She doesn\u2019t like apples",
-            "She not like apples"
-          ],
-          "correctAnswer": 2
+          "question": "Choose correct modal: 'You ___ leave now.'",
+          "options": ["must", "can", "may", "all"],
+          "correctAnswer": 3
         },
         {
           "id": 93,
-          "question": "Which is a conductor?",
-          "options": [
-            "Plastic",
-            "Rubber",
-            "Copper",
-            "Wood"
-          ],
-          "correctAnswer": 2
+          "question": "Identify adjective degree: 'Better' is",
+          "options": ["Positive", "Comparative", "Superlative", "None"],
+          "correctAnswer": 1
         },
         {
           "id": 94,
-          "question": "Capital of Australia?",
+          "question": "Choose correct punctuation:",
           "options": [
-            "Sydney",
-            "Melbourne",
-            "Canberra",
-            "Perth"
+            "Where are you.",
+            "Where are you?",
+            "Where are you!",
+            "Where are you,"
           ],
-          "correctAnswer": 2
+          "correctAnswer": 1
         },
         {
           "id": 95,
-          "question": "She ___ happy.",
-          "options": [
-            "is",
-            "are",
-            "am",
-            "be"
-          ],
-          "correctAnswer": 0
+          "question": "Choose correct verb: 'They ___ finished work.'",
+          "options": ["has", "have", "hads", "having"],
+          "correctAnswer": 1
         },
         {
           "id": 96,
-          "question": "10% of 200 = ?",
-          "options": [
-            "10",
-            "20",
-            "30",
-            "40"
-          ],
+          "question": "Choose correct preposition: 'He is sitting ___ the chair.'",
+          "options": ["in", "on", "at", "over"],
           "correctAnswer": 1
         },
         {
           "id": 97,
-          "question": "Which is the fastest land animal?",
-          "options": [
-            "Lion",
-            "Tiger",
-            "Cheetah",
-            "Leopard"
-          ],
-          "correctAnswer": 2
+          "question": "Choose correct conjunction: 'I will come ___ you call me.'",
+          "options": ["if", "but", "so", "and"],
+          "correctAnswer": 0
         },
         {
           "id": 98,
-          "question": "Identify tense: \u201cShe has finished her work.\u201d",
-          "options": [
-            "Past",
-            "Present perfect",
-            "Future",
-            "Past continuous"
-          ],
-          "correctAnswer": 1
-        },
-        {
-          "id": 99,
-          "question": "Which is renewable energy?",
-          "options": [
-            "Coal",
-            "Petrol",
-            "Solar",
-            "Diesel"
-          ],
+          "question": "Identify tense: 'She will go.'",
+          "options": ["Past", "Present", "Future", "Perfect"],
           "correctAnswer": 2
         },
         {
+          "id": 99,
+          "question": "Choose correct form: 'I ___ a book now.'",
+          "options": ["read", "am reading", "reads", "reading"],
+          "correctAnswer": 1
+        },
+        {
           "id": 100,
-          "question": "Which is the national fruit of India?",
-          "options": [
-            "Apple",
-            "Mango",
-            "Banana",
-            "Orange"
-          ],
+          "question": "16 × 2 = ?",
+          "options": ["30", "32", "36", "28"],
           "correctAnswer": 1
         }
       ]
@@ -1166,112 +701,67 @@
       "questions": [
         {
           "id": 101,
-          "question": "He ___ going to school.",
-          "options": [
-            "is",
-            "are",
-            "am",
-            "be"
-          ],
+          "question": "Which is the longest bone?",
+          "options": ["Femur", "Tibia", "Radius", "Ulna"],
           "correctAnswer": 0
         },
         {
           "id": 102,
-          "question": "National animal of India?",
+          "question": "Choose correct sentence:",
           "options": [
-            "Lion",
-            "Tiger",
-            "Elephant",
-            "Horse"
+            "He have done it",
+            "He has done it",
+            "He doing it",
+            "He do it"
           ],
           "correctAnswer": 1
         },
         {
           "id": 103,
-          "question": "25 \u00d7 12 = ?",
-          "options": [
-            "250",
-            "275",
-            "300",
-            "325"
-          ],
-          "correctAnswer": 2
+          "question": "Which is a mammal?",
+          "options": ["Fish", "Whale", "Snake", "Frog"],
+          "correctAnswer": 1
         },
         {
           "id": 104,
-          "question": "Which gas is used in photosynthesis?",
-          "options": [
-            "Oxygen",
-            "Carbon dioxide",
-            "Nitrogen",
-            "Hydrogen"
-          ],
-          "correctAnswer": 1
+          "question": "1/2 + 1/2 = ?",
+          "options": ["1", "2", "1/2", "0"],
+          "correctAnswer": 0
         },
         {
           "id": 105,
-          "question": "Which is the smallest continent?",
-          "options": [
-            "Europe",
-            "Australia",
-            "Antarctica",
-            "South America"
-          ],
-          "correctAnswer": 1
-        },
-        {
-          "id": 106,
-          "question": "Choose correct article: \u201c___ honest man\u201d",
-          "options": [
-            "A",
-            "An",
-            "The",
-            "No article"
-          ],
-          "correctAnswer": 1
-        },
-        {
-          "id": 107,
-          "question": "3/5 of 50 = ?",
-          "options": [
-            "20",
-            "25",
-            "30",
-            "35"
-          ],
+          "question": "Which is the largest planet?",
+          "options": ["Earth", "Mars", "Jupiter", "Venus"],
           "correctAnswer": 2
         },
         {
-          "id": 108,
-          "question": "Which organ pumps blood?",
-          "options": [
-            "Brain",
-            "Heart",
-            "Lung",
-            "Liver"
-          ],
+          "id": 106,
+          "question": "Identify noun:",
+          "options": ["Happiness", "Run", "Quickly", "Blue"],
+          "correctAnswer": 0
+        },
+        {
+          "id": 107,
+          "question": "Which gas do we breathe?",
+          "options": ["CO₂", "Oxygen", "Nitrogen", "Hydrogen"],
           "correctAnswer": 1
         },
         {
+          "id": 108,
+          "question": "75 – 25 = ?",
+          "options": ["40", "45", "50", "55"],
+          "correctAnswer": 2
+        },
+        {
           "id": 109,
-          "question": "Opposite of \u2018ancient\u2019?",
-          "options": [
-            "Old",
-            "Modern",
-            "Antique",
-            "Historic"
-          ],
+          "question": "Which is the capital of India?",
+          "options": ["Mumbai", "New Delhi", "Chennai", "Kolkata"],
           "correctAnswer": 1
         },
         {
           "id": 110,
-          "question": "Which is the largest mammal?",
-          "options": [
-            "Elephant",
-            "Blue Whale",
-            "Giraffe",
-            "Shark"
-          ],
+          "question": "6 × 8 = ?",
+          "options": ["42", "48", "52", "56"],
           "correctAnswer": 1
         }
       ]
@@ -1282,113 +772,63 @@
       "questions": [
         {
           "id": 111,
-          "question": "144 \u00f7 12 = ?",
-          "options": [
-            "10",
-            "11",
-            "12",
-            "13"
-          ],
+          "question": "Which is a conductor?",
+          "options": ["Wood", "Plastic", "Copper", "Rubber"],
           "correctAnswer": 2
         },
         {
           "id": 112,
-          "question": "Choose correct sentence:",
-          "options": [
-            "She don\u2019t like apples",
-            "She doesn\u2019t likes apples",
-            "She doesn\u2019t like apples",
-            "She not like apples"
-          ],
-          "correctAnswer": 2
+          "question": "Choose correct preposition: 'He is fond ___ music.'",
+          "options": ["on", "of", "with", "for"],
+          "correctAnswer": 1
         },
         {
           "id": 113,
-          "question": "Which is a conductor?",
-          "options": [
-            "Plastic",
-            "Rubber",
-            "Copper",
-            "Wood"
-          ],
+          "question": "Which is the fastest land animal?",
+          "options": ["Lion", "Tiger", "Cheetah", "Leopard"],
           "correctAnswer": 2
         },
         {
           "id": 114,
-          "question": "Capital of Australia?",
-          "options": [
-            "Sydney",
-            "Melbourne",
-            "Canberra",
-            "Perth"
-          ],
+          "question": "1000 – 500 = ?",
+          "options": ["400", "450", "500", "550"],
           "correctAnswer": 2
         },
         {
           "id": 115,
-          "question": "She ___ happy.",
-          "options": [
-            "is",
-            "are",
-            "am",
-            "be"
-          ],
-          "correctAnswer": 0
+          "question": "Which is the largest mammal?",
+          "options": ["Elephant", "Blue Whale", "Giraffe", "Shark"],
+          "correctAnswer": 1
         },
         {
           "id": 116,
-          "question": "10% of 200 = ?",
-          "options": [
-            "10",
-            "20",
-            "30",
-            "40"
-          ],
+          "question": "Identify adverb:",
+          "options": ["Slow", "Slowly", "Slower", "Slowest"],
           "correctAnswer": 1
         },
         {
           "id": 117,
-          "question": "Which is the fastest land animal?",
-          "options": [
-            "Lion",
-            "Tiger",
-            "Cheetah",
-            "Leopard"
-          ],
+          "question": "Which planet has rings?",
+          "options": ["Mars", "Jupiter", "Saturn", "Venus"],
           "correctAnswer": 2
         },
         {
           "id": 118,
-          "question": "Identify tense: \u201cShe has finished her work.\u201d",
-          "options": [
-            "Past",
-            "Present perfect",
-            "Future",
-            "Past continuous"
-          ],
+          "question": "9 × 11 = ?",
+          "options": ["88", "99", "77", "66"],
           "correctAnswer": 1
         },
         {
           "id": 119,
-          "question": "Which is renewable energy?",
-          "options": [
-            "Coal",
-            "Petrol",
-            "Solar",
-            "Diesel"
-          ],
-          "correctAnswer": 2
+          "question": "Which organ pumps blood?",
+          "options": ["Brain", "Heart", "Lung", "Liver"],
+          "correctAnswer": 1
         },
         {
           "id": 120,
-          "question": "Which is the national fruit of India?",
-          "options": [
-            "Apple",
-            "Mango",
-            "Banana",
-            "Orange"
-          ],
-          "correctAnswer": 1
+          "question": "144 ÷ 12 = ?",
+          "options": ["10", "11", "12", "13"],
+          "correctAnswer": 2
         }
       ]
     },
@@ -1398,113 +838,63 @@
       "questions": [
         {
           "id": 121,
-          "question": "He ___ going to school.",
-          "options": [
-            "is",
-            "are",
-            "am",
-            "be"
-          ],
-          "correctAnswer": 0
-        },
-        {
-          "id": 122,
-          "question": "National animal of India?",
-          "options": [
-            "Lion",
-            "Tiger",
-            "Elephant",
-            "Horse"
-          ],
-          "correctAnswer": 1
-        },
-        {
-          "id": 123,
-          "question": "25 \u00d7 12 = ?",
-          "options": [
-            "250",
-            "275",
-            "300",
-            "325"
-          ],
+          "question": "Which is a bird?",
+          "options": ["Dog", "Cat", "Sparrow", "Snake"],
           "correctAnswer": 2
         },
         {
+          "id": 122,
+          "question": "Choose correct modal: 'You ___ leave now.'",
+          "options": ["must", "can", "may", "all"],
+          "correctAnswer": 3
+        },
+        {
+          "id": 123,
+          "question": "Which is the unit of energy?",
+          "options": ["Newton", "Joule", "Watt", "Volt"],
+          "correctAnswer": 1
+        },
+        {
           "id": 124,
-          "question": "Which gas is used in photosynthesis?",
-          "options": [
-            "Oxygen",
-            "Carbon dioxide",
-            "Nitrogen",
-            "Hydrogen"
-          ],
+          "question": "20% of 100 = ?",
+          "options": ["10", "20", "30", "40"],
           "correctAnswer": 1
         },
         {
           "id": 125,
-          "question": "Which is the smallest continent?",
-          "options": [
-            "Europe",
-            "Australia",
-            "Antarctica",
-            "South America"
-          ],
+          "question": "Which is a liquid?",
+          "options": ["Air", "Water", "Rock", "Iron"],
           "correctAnswer": 1
         },
         {
           "id": 126,
-          "question": "Choose correct article: \u201c___ honest man\u201d",
-          "options": [
-            "A",
-            "An",
-            "The",
-            "No article"
-          ],
+          "question": "Identify tense: 'She was playing.'",
+          "options": ["Past", "Past continuous", "Present", "Future"],
           "correctAnswer": 1
         },
         {
           "id": 127,
-          "question": "3/5 of 50 = ?",
-          "options": [
-            "20",
-            "25",
-            "30",
-            "35"
-          ],
-          "correctAnswer": 2
+          "question": "Which is the largest desert?",
+          "options": ["Sahara", "Thar", "Gobi", "Arctic"],
+          "correctAnswer": 0
         },
         {
           "id": 128,
-          "question": "Which organ pumps blood?",
-          "options": [
-            "Brain",
-            "Heart",
-            "Lung",
-            "Liver"
-          ],
-          "correctAnswer": 1
+          "question": "5² = ?",
+          "options": ["10", "15", "20", "25"],
+          "correctAnswer": 3
         },
         {
           "id": 129,
-          "question": "Opposite of \u2018ancient\u2019?",
-          "options": [
-            "Old",
-            "Modern",
-            "Antique",
-            "Historic"
-          ],
+          "question": "Which is the national animal of India?",
+          "options": ["Lion", "Tiger", "Elephant", "Horse"],
           "correctAnswer": 1
         },
         {
           "id": 130,
-          "question": "Which is the largest mammal?",
-          "options": [
-            "Elephant",
-            "Blue Whale",
-            "Giraffe",
-            "Shark"
-          ],
-          "correctAnswer": 1
+          "question": "Which is the boiling point of water?",
+          "options": ["0°C", "50°C", "100°C", "200°C"],
+          "correctAnswer": 2
         }
       ]
     },
@@ -1514,112 +904,67 @@
       "questions": [
         {
           "id": 131,
-          "question": "144 \u00f7 12 = ?",
+          "question": "Choose correct sentence:",
           "options": [
-            "10",
-            "11",
-            "12",
-            "13"
+            "She don't go",
+            "She doesn't go",
+            "She not go",
+            "She no go"
           ],
-          "correctAnswer": 2
+          "correctAnswer": 1
         },
         {
           "id": 132,
-          "question": "Choose correct sentence:",
-          "options": [
-            "She don\u2019t like apples",
-            "She doesn\u2019t likes apples",
-            "She doesn\u2019t like apples",
-            "She not like apples"
-          ],
-          "correctAnswer": 2
+          "question": "18 ÷ 3 = ?",
+          "options": ["5", "6", "7", "8"],
+          "correctAnswer": 1
         },
         {
           "id": 133,
-          "question": "Which is a conductor?",
-          "options": [
-            "Plastic",
-            "Rubber",
-            "Copper",
-            "Wood"
-          ],
-          "correctAnswer": 2
+          "question": "Which is a natural source?",
+          "options": ["Plastic", "Tree", "Chair", "Table"],
+          "correctAnswer": 1
         },
         {
           "id": 134,
-          "question": "Capital of Australia?",
-          "options": [
-            "Sydney",
-            "Melbourne",
-            "Canberra",
-            "Perth"
-          ],
-          "correctAnswer": 2
+          "question": "Which is the capital of Japan?",
+          "options": ["Beijing", "Tokyo", "Seoul", "Bangkok"],
+          "correctAnswer": 1
         },
         {
           "id": 135,
-          "question": "She ___ happy.",
-          "options": [
-            "is",
-            "are",
-            "am",
-            "be"
-          ],
+          "question": "Identify adjective:",
+          "options": ["Red", "Run", "Eat", "Jump"],
           "correctAnswer": 0
         },
         {
           "id": 136,
-          "question": "10% of 200 = ?",
-          "options": [
-            "10",
-            "20",
-            "30",
-            "40"
-          ],
+          "question": "60 + 40 = ?",
+          "options": ["90", "100", "110", "120"],
           "correctAnswer": 1
         },
         {
           "id": 137,
-          "question": "Which is the fastest land animal?",
-          "options": [
-            "Lion",
-            "Tiger",
-            "Cheetah",
-            "Leopard"
-          ],
-          "correctAnswer": 2
-        },
-        {
-          "id": 138,
-          "question": "Identify tense: \u201cShe has finished her work.\u201d",
-          "options": [
-            "Past",
-            "Present perfect",
-            "Future",
-            "Past continuous"
-          ],
+          "question": "Which is a sense organ?",
+          "options": ["Chair", "Eye", "Table", "Book"],
           "correctAnswer": 1
         },
         {
-          "id": 139,
-          "question": "Which is renewable energy?",
-          "options": [
-            "Coal",
-            "Petrol",
-            "Solar",
-            "Diesel"
-          ],
+          "id": 138,
+          "question": "Which gas is used for balloons?",
+          "options": ["Oxygen", "Nitrogen", "Helium", "Hydrogen"],
           "correctAnswer": 2
         },
         {
+          "id": 139,
+          "question": "Choose correct conjunction: 'I was tired ___ I slept.'",
+          "options": ["but", "so", "and", "because"],
+          "correctAnswer": 1
+        },
+        {
           "id": 140,
-          "question": "Which is the national fruit of India?",
-          "options": [
-            "Apple",
-            "Mango",
-            "Banana",
-            "Orange"
-          ],
+          "question": "7 × 7 = ?",
+          "options": ["42", "49", "56", "63"],
           "correctAnswer": 1
         }
       ]
@@ -1630,113 +975,63 @@
       "questions": [
         {
           "id": 141,
-          "question": "He ___ going to school.",
-          "options": [
-            "is",
-            "are",
-            "am",
-            "be"
-          ],
-          "correctAnswer": 0
-        },
-        {
-          "id": 142,
-          "question": "National animal of India?",
-          "options": [
-            "Lion",
-            "Tiger",
-            "Elephant",
-            "Horse"
-          ],
+          "question": "Which is the largest continent?",
+          "options": ["Africa", "Asia", "Europe", "Antarctica"],
           "correctAnswer": 1
         },
         {
+          "id": 142,
+          "question": "Identify pronoun:",
+          "options": ["He", "Table", "Run", "Blue"],
+          "correctAnswer": 0
+        },
+        {
           "id": 143,
-          "question": "25 \u00d7 12 = ?",
-          "options": [
-            "250",
-            "275",
-            "300",
-            "325"
-          ],
+          "question": "Which is a mammal?",
+          "options": ["Fish", "Snake", "Whale", "Frog"],
           "correctAnswer": 2
         },
         {
           "id": 144,
-          "question": "Which gas is used in photosynthesis?",
-          "options": [
-            "Oxygen",
-            "Carbon dioxide",
-            "Nitrogen",
-            "Hydrogen"
-          ],
+          "question": "90 – 45 = ?",
+          "options": ["40", "45", "50", "55"],
           "correctAnswer": 1
         },
         {
           "id": 145,
-          "question": "Which is the smallest continent?",
-          "options": [
-            "Europe",
-            "Australia",
-            "Antarctica",
-            "South America"
-          ],
-          "correctAnswer": 1
+          "question": "Which is the fastest fish?",
+          "options": ["Shark", "Tuna", "Sailfish", "Whale"],
+          "correctAnswer": 2
         },
         {
           "id": 146,
-          "question": "Choose correct article: \u201c___ honest man\u201d",
-          "options": [
-            "A",
-            "An",
-            "The",
-            "No article"
-          ],
+          "question": "Choose correct article: '___ umbrella'",
+          "options": ["A", "An", "The", "None"],
           "correctAnswer": 1
         },
         {
           "id": 147,
-          "question": "3/5 of 50 = ?",
-          "options": [
-            "20",
-            "25",
-            "30",
-            "35"
-          ],
+          "question": "Which is the largest ocean?",
+          "options": ["Atlantic", "Indian", "Pacific", "Arctic"],
           "correctAnswer": 2
         },
         {
           "id": 148,
-          "question": "Which organ pumps blood?",
-          "options": [
-            "Brain",
-            "Heart",
-            "Lung",
-            "Liver"
-          ],
+          "question": "11 × 11 = ?",
+          "options": ["111", "121", "131", "141"],
           "correctAnswer": 1
         },
         {
           "id": 149,
-          "question": "Opposite of \u2018ancient\u2019?",
-          "options": [
-            "Old",
-            "Modern",
-            "Antique",
-            "Historic"
-          ],
+          "question": "Which is a reptile?",
+          "options": ["Dog", "Snake", "Cow", "Cat"],
           "correctAnswer": 1
         },
         {
           "id": 150,
-          "question": "Which is the largest mammal?",
-          "options": [
-            "Elephant",
-            "Blue Whale",
-            "Giraffe",
-            "Shark"
-          ],
-          "correctAnswer": 1
+          "question": "Identify noun:",
+          "options": ["Apple", "Run", "Quickly", "Blue"],
+          "correctAnswer": 0
         }
       ]
     },
@@ -1746,112 +1041,62 @@
       "questions": [
         {
           "id": 151,
-          "question": "144 \u00f7 12 = ?",
-          "options": [
-            "10",
-            "11",
-            "12",
-            "13"
-          ],
-          "correctAnswer": 2
+          "question": "Which is the national flower?",
+          "options": ["Rose", "Lotus", "Lily", "Sunflower"],
+          "correctAnswer": 1
         },
         {
           "id": 152,
-          "question": "Choose correct sentence:",
-          "options": [
-            "She don\u2019t like apples",
-            "She doesn\u2019t likes apples",
-            "She doesn\u2019t like apples",
-            "She not like apples"
-          ],
-          "correctAnswer": 2
+          "question": "200 ÷ 10 = ?",
+          "options": ["10", "20", "30", "40"],
+          "correctAnswer": 1
         },
         {
           "id": 153,
-          "question": "Which is a conductor?",
-          "options": [
-            "Plastic",
-            "Rubber",
-            "Copper",
-            "Wood"
-          ],
+          "question": "Which is the unit of force?",
+          "options": ["Joule", "Watt", "Newton", "Volt"],
           "correctAnswer": 2
         },
         {
           "id": 154,
-          "question": "Capital of Australia?",
-          "options": [
-            "Sydney",
-            "Melbourne",
-            "Canberra",
-            "Perth"
-          ],
-          "correctAnswer": 2
-        },
-        {
-          "id": 155,
-          "question": "She ___ happy.",
-          "options": [
-            "is",
-            "are",
-            "am",
-            "be"
-          ],
-          "correctAnswer": 0
-        },
-        {
-          "id": 156,
-          "question": "10% of 200 = ?",
-          "options": [
-            "10",
-            "20",
-            "30",
-            "40"
-          ],
+          "question": "Choose correct verb: 'They ___ playing.'",
+          "options": ["is", "are", "am", "be"],
           "correctAnswer": 1
         },
         {
-          "id": 157,
-          "question": "Which is the fastest land animal?",
-          "options": [
-            "Lion",
-            "Tiger",
-            "Cheetah",
-            "Leopard"
-          ],
+          "id": 155,
+          "question": "Which is a planet?",
+          "options": ["Sun", "Moon", "Earth", "Star"],
           "correctAnswer": 2
         },
         {
+          "id": 156,
+          "question": "4 × 25 = ?",
+          "options": ["50", "75", "100", "125"],
+          "correctAnswer": 2
+        },
+        {
+          "id": 157,
+          "question": "Which is the national bird?",
+          "options": ["Sparrow", "Peacock", "Crow", "Parrot"],
+          "correctAnswer": 1
+        },
+        {
           "id": 158,
-          "question": "Identify tense: \u201cShe has finished her work.\u201d",
-          "options": [
-            "Past",
-            "Present perfect",
-            "Future",
-            "Past continuous"
-          ],
+          "question": "Identify adverb:",
+          "options": ["Fast", "Quickly", "Run", "Blue"],
           "correctAnswer": 1
         },
         {
           "id": 159,
           "question": "Which is renewable energy?",
-          "options": [
-            "Coal",
-            "Petrol",
-            "Solar",
-            "Diesel"
-          ],
+          "options": ["Coal", "Petrol", "Solar", "Diesel"],
           "correctAnswer": 2
         },
         {
           "id": 160,
-          "question": "Which is the national fruit of India?",
-          "options": [
-            "Apple",
-            "Mango",
-            "Banana",
-            "Orange"
-          ],
+          "question": "Which is the capital of USA? (repeated verification)",
+          "options": ["New York", "Washington D.C.", "Chicago", "Boston"],
           "correctAnswer": 1
         }
       ]

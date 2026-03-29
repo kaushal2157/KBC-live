@@ -5,14 +5,11 @@ import { ActivatedRoute } from '@angular/router';
 import { routes } from '../../app.routes';
 import { NEVER } from 'rxjs';
 import { RoleContextService } from '../../services/role-context.service';
+import { Question as BaseQuestion } from '../../models/question.model';
 
-interface Question {
-  id: number;
-  question: string;
-  options: string[];
-  correctAnswer: number;
-  difficulty: 'easy' | 'medium' | 'hard';
-  category: string;
+interface Question extends BaseQuestion {
+  difficulty?: 'easy' | 'medium' | 'hard';
+  category?: string;
   explanation?: string;
 }
 
@@ -42,7 +39,7 @@ export class QuizComponent {
   roleContextService = inject(RoleContextService);
   branding = this.roleContextService.getBrandingConfig();
   isTigerTheme = this.roleContextService.getCurrentRole() === 'tiger';
-  questions: string | any = [];
+  questions: Question[] = [];
 
   gameState: GameState = {
     currentQuestion: 0,
@@ -84,23 +81,30 @@ export class QuizComponent {
   contestentId: any = 1;
   ngOnInit() {
     const idParam = this.routerService.snapshot.paramMap.get('id');
-    this.contestentId = Number(idParam)
+    this.contestentId = Number(idParam);
     this.questionsService
       .getContestantById(this.contestentId)
       .subscribe((data) => {
-        this.questions = data!.questions;
+        this.questions = [...(data?.questions ?? [])];
         console.log('questions : ', this.questions);
-        // this.shuffleQuestions();
-      });
 
-    this.startGame();
+        if (this.questions.length) {
+          this.shuffleQuestions();
+        }
+
+        this.startGame();
+      });
     // this.gameStarted = true;
     // this.gameState.gameOver = false;
     // this.gameState.gameWon = false;
   }
 
   shuffleQuestions() {
-    this.questions = this.questions.sort(() => Math.random() - 0.5);
+    if (!this.questions.length) {
+      return;
+    }
+
+    this.questions = [...this.questions].sort(() => Math.random() - 0.5);
   }
 
   startGame() {
