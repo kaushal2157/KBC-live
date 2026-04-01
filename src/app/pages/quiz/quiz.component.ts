@@ -1,16 +1,26 @@
 import { CommonModule } from '@angular/common';
 import { Component, inject } from '@angular/core';
 import { QuestionsService } from '../../services/questions.service';
-import { ActivatedRoute } from '@angular/router';
+import { ActivatedRoute, Router } from '@angular/router';
 import { routes } from '../../app.routes';
 import { NEVER } from 'rxjs';
 import { RoleContextService } from '../../services/role-context.service';
 import { Question as BaseQuestion } from '../../models/question.model';
+import { QuizResultComponent } from '../../quiz-result/quiz-result.component';
 
 interface Question extends BaseQuestion {
   difficulty?: 'easy' | 'medium' | 'hard';
   category?: string;
   explanation?: string;
+}
+
+interface QuestionResult {
+  question: string;
+  options: string[];
+  selectedAnswer: number | null;
+  correctAnswer: number;
+  explanation?: string;
+  isCorrect: boolean;
 }
 
 interface GameState {
@@ -30,7 +40,7 @@ interface GameState {
 
 @Component({
   selector: 'app-quiz',
-  imports: [CommonModule],
+  imports: [CommonModule, QuizResultComponent],
   templateUrl: './quiz.component.html',
   styleUrl: './quiz.component.css',
 })
@@ -40,6 +50,7 @@ export class QuizComponent {
   branding = this.roleContextService.getBrandingConfig();
   isTigerTheme = this.roleContextService.getCurrentRole() === 'tiger';
   questions: Question[] = [];
+  questionHistory: QuestionResult[] = [];
 
   gameState: GameState = {
     currentQuestion: 0,
@@ -78,6 +89,7 @@ export class QuizComponent {
   showOptions: boolean = false;
   timerStarted: boolean = false;
   routerService = inject(ActivatedRoute);
+  router = inject(Router);
   contestentId: any = 1;
   ngOnInit() {
     const idParam = this.routerService.snapshot.paramMap.get('id');
@@ -118,9 +130,14 @@ export class QuizComponent {
   resetGame() {
     this.gameStarted = false;
     this.stopTimer();
+    this.questionHistory = [];
     this.resetGameState();
     this.shuffleQuestions();
     this.startGame();
+  }
+
+  navigateToContestants() {
+    this.router.navigate(['contestents-list']);
   }
 
   resetGameState() {
@@ -218,6 +235,17 @@ export class QuizComponent {
     this.stopTimer();
 
     const currentQuestion = this.getCurrentQuestion();
+    if (currentQuestion) {
+      this.questionHistory.push({
+        question: currentQuestion.question,
+        options: [...currentQuestion.options],
+        selectedAnswer: optionIndex,
+        correctAnswer: currentQuestion.correctAnswer,
+        explanation: currentQuestion.explanation,
+        isCorrect: optionIndex === currentQuestion.correctAnswer,
+      });
+    }
+
     if (currentQuestion && optionIndex === currentQuestion.correctAnswer) {
       this.clappingSound.play();
       this.gameState.score++;
