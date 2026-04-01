@@ -9,8 +9,8 @@ export const AUTH_CONFIG = {
     // Existing Pravakta credentials (kept for backward compatibility)
     { username: 'client', password: 'client@123', role: 'pravakta' },
     // Role-based credentials requested by client
-    { username: 'pravakta academy', password: 'pravakta@123', role: 'pravakta' },
-    { username: 'tigerschool', password: 'tiger@123', role: 'tiger' }
+    { username: 'pravakta', password: 'pravakta@2026', role: 'pravakta' },
+    { username: 'tigers', password: 'tiger@2026', role: 'tiger' }
   ] as const,
   storageLockKey: 'kbc_access_granted',
   roleStorageKey: 'kbc_selected_role',
