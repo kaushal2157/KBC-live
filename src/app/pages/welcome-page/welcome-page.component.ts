@@ -19,28 +19,24 @@ export class WelcomePageComponent implements AfterViewInit, OnDestroy {
   isTigerTheme = this.roleContextService.getCurrentRole() === 'tiger';
   tagline     = 'Empowering Future Leaders Through Knowledge';
 
-  // Compact acronym row — no boxes needed
+  // Compact acronym row with glass colors
   gemsList = [
-    { letter: 'G', shortLabel: 'General',  color: 'text-amber-400'   },
-    { letter: 'E', shortLabel: 'English',  color: 'text-rose-400'    },
-    { letter: 'M', shortLabel: 'Maths',    color: 'text-blue-400'    },
-    { letter: 'S', shortLabel: 'Science',  color: 'text-emerald-400' },
+    { letter: 'G', shortLabel: 'General',  color: 'text-amber-400',   bgGlow: 'bg-amber-400'   },
+    { letter: 'E', shortLabel: 'English',  color: 'text-rose-400',    bgGlow: 'bg-rose-400'    },
+    { letter: 'M', shortLabel: 'Maths',    color: 'text-blue-400',    bgGlow: 'bg-blue-400'    },
+    { letter: 'S', shortLabel: 'Science',  color: 'text-emerald-400', bgGlow: 'bg-emerald-400' },
   ];
 
 
   // Random-ish particles — pre-seeded so they're stable
-  // particles = [
-  //   { size: 5,  top: 10, left: 8  },
-  //   { size: 3,  top: 22, left: 55 },
-  //   { size: 6,  top: 38, left: 82 },
-  //   { size: 4,  top: 60, left: 20 },
-  //   { size: 8,  top: 75, left: 67 },
-  //   { size: 3,  top: 88, left: 40 },
-  //   { size: 5,  top: 50, left: 92 },
-  //   { size: 4,  top: 15, left: 30 },
-  //   { size: 6,  top: 45, left: 5  },
-  //   { size: 3,  top: 95, left: 77 },
-  // ];
+  particles = Array.from({length: 15}).map(() => ({
+    size: Math.random() * 4 + 2, // 2px to 6px
+    top: Math.random() * 100,
+    left: Math.random() * 100,
+    opacity: Math.random() * 0.5 + 0.3,
+    duration: Math.random() * 10 + 10, // 10s to 20s travel
+    delay: Math.random() * -20 // random start time
+  }));
   private gsapCtx: any;
 
   async ngAfterViewInit() {

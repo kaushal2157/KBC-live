@@ -3,14 +3,25 @@
   class="relative h-screen w-screen overflow-hidden text-gray-100 font-sans select-none bg-[#060606]"
 >
 
-  <!-- Background music -->
-  <audio src="assets/sounds/KBCINTRO.mp3" autoplay preload="auto"></audio>
+  <!-- Radial background grid (Studio-like) -->
+  <div class="absolute inset-0 z-0 bg-[radial-gradient(circle_at_center,rgba(255,255,255,0.02)_1px,transparent_1px)] bg-[size:40px_40px] opacity-70"></div>
 
   <!-- ── Layer 1: Ambient background glows ── -->
-  <div class="absolute inset-0 pointer-events-none overflow-hidden">
+  <div class="absolute inset-0 pointer-events-none overflow-hidden z-0">
     <div class="gsap-bg-glow absolute -top-[20%] -left-[15%] w-[55%] h-[55%] rounded-full blur-[140px] bg-amber-700"></div>
     <div class="gsap-bg-glow absolute -bottom-[20%] -right-[15%] w-[55%] h-[55%] rounded-full blur-[140px] bg-orange-800"></div>
     <div class="gsap-bg-glow absolute top-[30%] right-[5%]  w-[30%] h-[30%] rounded-full blur-[100px] bg-yellow-900/60"></div>
+  </div>
+
+  <!-- Sparkle Particles -->
+  <div class="absolute inset-0 pointer-events-none z-0 overflow-hidden">
+    <div *ngFor="let p of particles" class="absolute bg-amber-400 rounded-full sparkle-particle animate-float"
+         [style.width.px]="p.size" [style.height.px]="p.size"
+         [style.top.%]="p.top" [style.left.%]="p.left"
+         [style.animation-duration.s]="p.duration"
+         [style.animation-delay.s]="p.delay"
+         [style.opacity]="p.opacity">
+    </div>
   </div>
 
   <!-- ── Layer 3: Main content — centered, non-scrollable ── -->
@@ -47,13 +58,13 @@
     <!-- ── Main Competition Title ── -->
     <div class="gsap-title relative overflow-visible px-4 py-2">
 
-      <p class="text-amber-500/60 tracking-[0.5em] text-[15x] uppercase font-semibold">
+      <p class="text-amber-500/60 tracking-[0.5em] text-[15px] uppercase font-semibold">
         Competition
       </p>
-      <h1 class="text-5xl mt-0 sm:text-6xl md:text-7xl lg:text-8xl font-black tracking-tighter uppercase leading-[1.2]">
+      <h1 class="text-4xl sm:text-5xl md:text-7xl lg:text-8xl font-black tracking-tighter uppercase leading-[1.2]">
         <span class="block text-white title-small">
           <span class="inline-block animate-word-slide delay-0">Kon</span>
-          <span class="inline-block animate-word-slide delay-1 ml-4">Banega</span>
+          <span class="inline-block animate-word-slide delay-1 ml-2 sm:ml-4">Banega</span>
         </span>
       </h1>
 
@@ -66,16 +77,16 @@
       <div class="h-px w-16 bg-gradient-to-l from-transparent to-amber-500/60 rounded-full"></div>
     </div>
 
-    <!-- GEMS acronym — compact inline, no boxes -->
-    <div class="gsap-gems-row flex items-center gap-4 sm:gap-8">
+    <!-- GEMS acronym - compact inline, no boxes -->
+    <div class="gsap-gems-row flex items-center gap-3 sm:gap-6 md:gap-8 mt-5 sm:mt-6">
       <div *ngFor="let gem of gemsList" class="flex flex-col items-center gap-1">
-        <span [class]="'text-4xl sm:text-5xl md:text-6xl font-black animate-gem-glow ' + gem.color">{{ gem.letter }}</span>
-        <span class="text-gray-300 text-xs sm:text-sm uppercase tracking-widest font-semibold">{{ gem.shortLabel }}</span>
+        <span [class]="'text-3xl sm:text-5xl md:text-6xl font-black animate-gem-glow ' + gem.color">{{ gem.letter }}</span>
+        <span class="text-gray-300 text-[10px] sm:text-sm uppercase tracking-widest font-semibold">{{ gem.shortLabel }}</span>
       </div>
     </div>
 
     <!-- CTA Button -->
-    <div class="gsap-cta mt-15 ">
+    <div class="gsap-cta mt-8 sm:mt-12 md:mt-16">
       <button
         (click)="startQuiz()"
         class="group relative px-12 sm:px-16 py-4 sm:py-5 rounded-full overflow-hidden shadow-2xl transition-transform duration-300 hover:scale-105 active:scale-95"

@@ -11,6 +11,19 @@
   overflow: hidden;
 }
 
+/* ── Sparkle Particle Animation ── */
+.sparkle-particle {
+  animation: floatParticle linear infinite;
+  box-shadow: 0 0 10px rgba(251, 191, 36, 0.8), 0 0 2px rgba(255, 255, 255, 0.8);
+}
+
+@keyframes floatParticle {
+  0% { transform: translateY(0) scale(1); opacity: 0; }
+  10% { opacity: 1; transform: translateY(-5vh) scale(1.2); }
+  90% { opacity: 1; transform: translateY(-45vh) scale(0.8); }
+  100% { transform: translateY(-50vh) scale(0.5); opacity: 0; }
+}
+
 /* ── Gem letter glow (per-colour class applied via [class]) ── */
 .animate-gem-glow {
   animation: gemGlow 2s ease-in-out infinite alternate;
