@@ -18,7 +18,7 @@ export const ROLE_BRANDING_CONFIG: Record<UserRole, RoleBrandingConfig> = {
   },
   tiger: {
     heading: 'Kon Banega GEMS',
-    organizationName: 'Tiger School',
+    organizationName: 'Tiger International School, Parola',
     logoPath: 'tiger logo.jpeg',
     kbcLogoPath: 'kbc_logo.png',
     questionsFile: 'tigerQuestions.json'

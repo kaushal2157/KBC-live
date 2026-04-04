@@ -1,0 +1,108 @@
+/* ============================================================
+   Welcome Page — "Kon Banega GEMS" Premium Cinematic Edition
+   All repeating animations are CSS-only (GPU layer).
+   GSAP handles entrance + flash-aura loops.
+   ============================================================ */
+
+/* Prevent page scroll — full viewport lock */
+:host {
+  display: block;
+  height: 100vh;
+  overflow: hidden;
+}
+
+/* ── Gem letter glow (per-colour class applied via [class]) ── */
+.animate-gem-glow {
+  animation: gemGlow 2s ease-in-out infinite alternate;
+}
+
+@keyframes gemGlow {
+  from { filter: drop-shadow(0 0 2px currentColor); }
+  to   { filter: drop-shadow(0 0 14px currentColor) drop-shadow(0 0 28px currentColor); }
+}
+
+/* ── Glass card ── */
+.tiger-card {
+  background: linear-gradient(145deg, rgba(20,20,20,0.85), rgba(5,5,5,0.95));
+  border: 1px solid rgba(245, 158, 11, 0.15);
+  transition: border-color 0.3s ease, box-shadow 0.3s ease;
+}
+.tiger-card:hover {
+  border-color: rgba(245, 158, 11, 0.4);
+  box-shadow: 0 0 30px rgba(245, 158, 11, 0.12);
+}
+
+/* ── Aura ring pulse (CSS layer, GSAP controls opacity entry) ── */
+.aura-ring {
+  position: absolute;
+  border-radius: 50%;
+  border: 1.5px solid rgba(245, 158, 11, 0.35);
+  animation: ringPulse 2.4s ease-out infinite;
+}
+.aura-ring.delay-1 { animation-delay: 0.8s; }
+.aura-ring.delay-2 { animation-delay: 1.6s; }
+
+@keyframes ringPulse {
+  0%   { transform: scale(1);   opacity: 0.7; }
+  100% { transform: scale(2.4); opacity: 0;   }
+}
+
+
+/* ── Title text adjustments and extra animation ── */
+.title-small {
+  font-size: 2.3rem;
+  letter-spacing: 0.03em;
+  display: inline-flex;
+  gap: 0.8rem;
+  justify-content: center;
+  line-height: 1.2;
+}
+
+.gsap-title, .gsap-title h1 {
+  overflow: visible;
+}
+
+@media (min-width: 640px) {
+  .title-small { font-size: 2.8rem; }
+}
+
+
+@media (min-width: 768px) {
+  .title-small { font-size: 3.4rem; }
+}
+
+.animate-title-bounce {
+  animation: titleBounce 2.2s ease-in-out infinite;
+  transform-origin: center;
+}
+
+@keyframes titleBounce {
+  0%, 100% { transform: translateY(0) scale(1); }
+  40% { transform: translateY(-4px) scale(1.02); }
+  70% { transform: translateY(1px) scale(0.995); }
+}
+
+.animate-title-glow {
+  animation: titleGlow 2.7s ease-in-out infinite alternate;
+}
+
+@keyframes titleGlow {
+  0% { text-shadow: 0 0 8px rgba(255, 214, 91, 0.5), 0 0 16px rgba(255, 184, 55, 0.4); }
+  100% { text-shadow: 0 0 14px rgba(255, 226, 132, 0.9), 0 0 28px rgba(255, 165, 20, 0.6); }
+}
+
+.animate-word-slide {
+  display: inline-block;
+  opacity: 0;
+  transform: translateY(26px) scale(0.92);
+  animation: wordSlideIn 0.75s cubic-bezier(0.19, 1, 0.22, 1) forwards;
+}
+
+.delay-0 { animation-delay: 0.15s; }
+.delay-1 { animation-delay: 0.65s; }
+
+@keyframes wordSlideIn {
+  0% { opacity: 0; transform: translateY(26px) scale(0.92); }
+  60% { opacity: 1; transform: translateY(-4px) scale(1.03); }
+  100% { opacity: 1; transform: translateY(0) scale(1); }
+}

@@ -1,114 +1,96 @@
+<!-- Full-viewport, non-scrollable cinematic welcome screen -->
 <div
-  [class]="
-    'relative min-h-screen text-gray-900 overflow-hidden ' +
-    (isTigerTheme ? 'bg-amber-50' : 'bg-white')
-  "
+  class="relative h-screen w-screen overflow-hidden text-gray-100 font-sans select-none bg-[#060606]"
 >
 
-  <!-- Modern Geometric Background -->
-  <div class="absolute inset-0">
-    <!-- Light gradient base -->
-    <div
-      [class]="
-        'absolute inset-0 bg-gradient-to-br ' +
-        (isTigerTheme
-          ? 'from-amber-100 via-orange-50 to-yellow-100'
-          : 'from-gray-50 via-blue-50 to-indigo-100')
-      "
-    ></div>
-    
-    <!-- Geometric shapes -->
-    <!-- <div class="absolute top-20 right-20 w-72 h-72 bg-gradient-to-br from-blue-600/10 to-indigo-600/10 rounded-full blur-3xl"></div>
-    <div class="absolute bottom-20 left-20 w-96 h-96 bg-gradient-to-tr from-yellow-400/10 to-orange-500/10 rounded-full blur-3xl"></div> -->
-    
-    <!-- Grid pattern -->
-    <!-- <div class="absolute inset-0 opacity-10" 
-         style="background-image: linear-gradient(rgba(59, 130, 246, 0.1) 1px, transparent 1px), 
-                linear-gradient(90deg, rgba(59, 130, 246, 0.1) 1px, transparent 1px); 
-                background-size: 50px 50px;"></div> -->
+  <!-- Background music -->
+  <audio src="assets/sounds/KBCINTRO.mp3" autoplay preload="auto"></audio>
 
+  <!-- ── Layer 1: Ambient background glows ── -->
+  <div class="absolute inset-0 pointer-events-none overflow-hidden">
+    <div class="gsap-bg-glow absolute -top-[20%] -left-[15%] w-[55%] h-[55%] rounded-full blur-[140px] bg-amber-700"></div>
+    <div class="gsap-bg-glow absolute -bottom-[20%] -right-[15%] w-[55%] h-[55%] rounded-full blur-[140px] bg-orange-800"></div>
+    <div class="gsap-bg-glow absolute top-[30%] right-[5%]  w-[30%] h-[30%] rounded-full blur-[100px] bg-yellow-900/60"></div>
   </div>
 
-  <!-- Navigation Header -->
-  <nav class="relative z-10 flex items-center justify-between p-2 max-w-7xl mx-auto">
-    <div class="flex items-center gap-6">
-      <!-- Pravakta Logo -->
-      <div class="flex items-center gap-3 ">
-        
-          <img [src]="branding.logoPath" [alt]="branding.organizationName" class="w-32 h-full object-contain">
-   
-      </div>
-    </div>
-   
-    <div class="flex items-center gap-6 shadow-sm ">
-      <!-- KBC Logo -->
-      <!-- <div class="flex items-center gap-3">
-        
-          <img [src]="branding.kbcLogoPath" alt="KBC Style" class="w-20 h-full object-contain rounded-lg">
-      </div> -->
-    </div>
-  </nav>
+  <!-- ── Layer 3: Main content — centered, non-scrollable ── -->
+  <div class="relative z-10 h-full flex flex-col items-center justify-center px-6 text-center">
 
-  <!-- Main Content -->
-  <div class="relative z-10 max-w-6xl mx-auto px-8">
-    
-    <!-- Hero Section -->
-    <div class="text-center">
-      
-      <!-- Main Title -->
-      <!-- <h1 class="md:text-4xl font-black mb-8 tracking-tight">
-        <span class="block text-gray-900">Kon Banega English Kaa</span>
-        <span class="block bg-gradient-to-r from-blue-600 via-indigo-600 to-purple-600 bg-clip-text text-transparent">Champion</span>
-      </h1> -->
-            <h1 class="md:text-4xl font-black mb-8 tracking-tight">
-        <span [class]="isTigerTheme ? 'block text-amber-950' : 'block text-blue-950'">{{ branding.heading }}</span>
-        <span
-          [class]="
-            'block bg-gradient-to-r bg-clip-text text-transparent ' +
-            (isTigerTheme
-              ? 'from-amber-700 via-orange-500 to-yellow-600'
-              : 'from-red-500 via-yellow-400 to-red-600')
-          "
-        >
-          Champion
+    <!-- Presented By (top label) -->
+    <p class="gsap-label text-amber-500/70 tracking-[0.35em] text-[10px] sm:text-xs uppercase font-bold">
+      ✦ &nbsp; Presented By &nbsp; ✦
+    </p>
+
+    <!-- ── Logo with aura rings ── -->
+    <div class="gsap-logo relative flex items-center justify-center">
+      <!-- Repeating aura rings (CSS animation) -->
+      <div class="aura-ring w-40 h-40 sm:w-52 sm:h-52"></div>
+      <div class="aura-ring delay-1 w-40 h-40 sm:w-52 sm:h-52"></div>
+      <div class="aura-ring delay-2 w-40 h-40 sm:w-52 sm:h-52"></div>
+
+      <!-- Logo image -->
+      <img
+        [src]="branding.logoPath"
+        [alt]="branding.organizationName"
+        class="relative z-10 h-24 sm:h-28 md:h-32 object-contain drop-shadow-2xl"
+      />
+    </div>
+
+    <!-- School name -->
+    <h2 class="gsap-school-name text-lg sm:text-xl md:text-2xl font-bold text-white tracking-wide">
+      {{ branding.organizationName }}
+    </h2>
+    <p class="gsap-tagline text-amber-400/60 text-xs sm:text-sm font-medium italic">
+      {{ tagline }}
+    </p>
+
+    <!-- ── Main Competition Title ── -->
+    <div class="gsap-title relative overflow-visible px-4 py-2">
+
+      <p class="text-amber-500/60 tracking-[0.5em] text-[15x] uppercase font-semibold">
+        Competition
+      </p>
+      <h1 class="text-5xl mt-0 sm:text-6xl md:text-7xl lg:text-8xl font-black tracking-tighter uppercase leading-[1.2]">
+        <span class="block text-white title-small">
+          <span class="inline-block animate-word-slide delay-0">Kon</span>
+          <span class="inline-block animate-word-slide delay-1 ml-4">Banega</span>
         </span>
       </h1>
-      
-      <!-- Subtitle -->
-      <p class="text-xl text-gray-600 mb-12 max-w-3xl mx-auto leading-relaxed">
-        Transform your English skills with our intelligent quiz system. 
-        Challenge yourself with progressive difficulty levels and smart feedback.
-      </p>
-      
-      <!-- Action Buttons -->
-      <!-- <div class="flex flex-col sm:flex-row items-center justify-center">
-        <button (click)="startQuiz()" 
-          class="bg-gray-900 hover:bg-gray-800 text-white font-semibold py-4 px-8 rounded-2xl
-                 shadow-lg hover:shadow-xl transition-all duration-300 transform hover:scale-105
-                 flex items-center gap-3 text-lg">
-          Begin Quiz
-          <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" 
-                  d="M14 5l7 7m0 0l-7 7m7-7H3"/>
-          </svg>
-        </button>
-      </div> -->
-            <div class="flex flex-col sm:flex-row items-center justify-center">
-        <button
-          (click)="startQuiz()"
-          [class]="
-            'text-white font-semibold py-4 px-8 rounded-2xl shadow-lg hover:shadow-xl transition-all duration-300 transform hover:scale-105 flex items-center gap-3 text-lg ' +
-            (isTigerTheme ? 'bg-amber-600 hover:bg-amber-700' : 'bg-red-600 hover:bg-red-700')
-          "
-        >
-          Begin Quiz
-          <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" 
-                  d="M14 5l7 7m0 0l-7 7m7-7H3"/>
-          </svg>
-        </button>
+
+    </div>
+
+    <!-- Thin separator -->
+    <div class="flex items-center gap-3">
+      <div class="h-px w-16 bg-gradient-to-r from-transparent to-amber-500/60 rounded-full"></div>
+      <div class="w-1.5 h-1.5 bg-amber-500 rounded-full animate-pulse"></div>
+      <div class="h-px w-16 bg-gradient-to-l from-transparent to-amber-500/60 rounded-full"></div>
+    </div>
+
+    <!-- GEMS acronym — compact inline, no boxes -->
+    <div class="gsap-gems-row flex items-center gap-4 sm:gap-8">
+      <div *ngFor="let gem of gemsList" class="flex flex-col items-center gap-1">
+        <span [class]="'text-4xl sm:text-5xl md:text-6xl font-black animate-gem-glow ' + gem.color">{{ gem.letter }}</span>
+        <span class="text-gray-300 text-xs sm:text-sm uppercase tracking-widest font-semibold">{{ gem.shortLabel }}</span>
       </div>
     </div>
-  </div>
 
+    <!-- CTA Button -->
+    <div class="gsap-cta mt-15 ">
+      <button
+        (click)="startQuiz()"
+        class="group relative px-12 sm:px-16 py-4 sm:py-5 rounded-full overflow-hidden shadow-2xl transition-transform duration-300 hover:scale-105 active:scale-95"
+      >
+        <div class="absolute inset-0 bg-gradient-to-r from-amber-500 via-yellow-400 to-orange-500"></div>
+        <!-- Sweep shine on hover -->
+        <div class="absolute inset-0 -translate-x-full group-hover:translate-x-0 transition-transform duration-500 bg-white/20 skew-x-[-15deg]"></div>
+        <span class="relative z-10 text-black font-black text-base sm:text-lg uppercase tracking-widest flex items-center gap-3">
+          Begin the Quiz
+          <svg class="w-5 h-5 transition-transform duration-300 group-hover:translate-x-1" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="3" d="M14 5l7 7m0 0l-7 7m7-7H3"/>
+          </svg>
+        </span>
+      </button>
+    </div>
+
+  </div>
 </div>
