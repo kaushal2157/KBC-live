@@ -28,28 +28,28 @@ export class QuizResultComponent {
 
   get outcomeTitle(): string {
     if (this.gameWon) {
-      return 'Quiz completed with flying colors';
+      return 'Magnificent Victory!';
     }
     if (this.percentage >= 80) {
-      return 'Outstanding finish';
+      return 'Outstanding Performance!';
     }
     if (this.percentage >= 50) {
-      return 'Great effort';
+      return 'Great Effort!';
     }
-    return 'Nice try - keep going';
+    return 'Better Luck Next Time!';
   }
 
   get outcomeMessage(): string {
     if (this.gameWon) {
-      return `You answered all ${this.totalQuestions} questions and earned a perfect finish for ${this.branding.organizationName}.`;
+      return `You've demonstrated exceptional brilliance! A perfect finish for ${this.branding.organizationName}. You are a true champion!`;
     }
     if (this.percentage >= 80) {
-      return `Excellent work - you scored ${this.percentage}% and showed strong knowledge.`;
+      return `Phenomenal! You scored ${this.percentage}% and showcased an impressive depth of knowledge.`;
     }
     if (this.percentage >= 50) {
-      return `Good result! You scored ${this.percentage}% and you're ready for the next round.`;
+      return `Solid work! You achieved ${this.percentage}%. Keep pushing, you're on the right track!`;
     }
-    return `This round is complete. Review your score and head back to the contestants list to try again.`;
+    return `Don't give up! Review your mistakes and head back to the arena. Every setback is a setup for a comeback!`;
   }
 
   get statusLabel(): string {
@@ -58,15 +58,15 @@ export class QuizResultComponent {
 
   get badgeClass(): string {
     if (this.gameWon) {
-      return 'bg-emerald-500/20 text-emerald-100 border border-emerald-400/25';
+      return 'bg-emerald-500/20 text-emerald-300 border border-emerald-400/30';
     }
     if (this.percentage >= 80) {
-      return 'bg-cyan-500/20 text-cyan-100 border border-cyan-400/25';
+      return 'bg-cyan-500/20 text-cyan-300 border border-cyan-400/30';
     }
     if (this.percentage >= 50) {
-      return 'bg-indigo-500/20 text-indigo-100 border border-indigo-400/25';
+      return 'bg-indigo-500/20 text-indigo-300 border border-indigo-400/30';
     }
-    return 'bg-rose-500/20 text-rose-100 border border-rose-400/25';
+    return 'bg-rose-500/20 text-rose-300 border border-rose-400/30';
   }
 
   get accentGradient(): string {
@@ -75,3 +75,4 @@ export class QuizResultComponent {
       : 'from-sky-500 via-indigo-500 to-fuchsia-600';
   }
 }
+

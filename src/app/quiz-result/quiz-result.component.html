@@ -1,81 +1,104 @@
 <div
   [class]="
-    'h-screen overflow-hidden flex items-center justify-center px-4 py-6 text-white ' +
+    'min-h-screen relative overflow-hidden flex items-center justify-center p-6 ' +
     (isTigerTheme
-      ? 'bg-gradient-to-br from-amber-950 via-orange-900 to-zinc-900'
-      : 'bg-gradient-to-br from-slate-950 via-indigo-950 to-fuchsia-950')
+      ? 'bg-zinc-950'
+      : 'bg-slate-950')
   "
 >
-  <div class="w-full max-w-xl">
-    <div class="rounded-[36px] border border-white/10 bg-white/5 p-6 shadow-2xl backdrop-blur-xl">
-      <div class="flex flex-col gap-4 sm:flex-row sm:items-center sm:justify-between">
-        <div class="flex items-center gap-4">
-          <img
-            [src]="branding.logoPath"
-            [alt]="branding.organizationName"
-            class="h-20 w-20 rounded-3xl border border-white/10 bg-white/10 p-3 object-contain"
-          />
-          <div>
-            <p class="text-sm uppercase tracking-[0.35em] text-slate-300">
-              Quiz completion
-            </p>
-            <h1 class="mt-2 text-3xl font-extrabold tracking-tight text-white">
-              {{ branding.heading }}
-            </h1>
-            <p class="mt-1 text-sm text-slate-300">
-              {{ branding.organizationName }}
-            </p>
-          </div>
-        </div>
+  <!-- Background Glows -->
+  <div [class]="'absolute top-0 -left-1/4 w-3/4 h-3/4 rounded-full mix-blend-screen filter blur-[120px] opacity-30 animate-pulse ' + (isTigerTheme ? 'bg-amber-600' : 'bg-indigo-600')"></div>
+  <div [class]="'absolute bottom-0 -right-1/4 w-3/4 h-3/4 rounded-full mix-blend-screen filter blur-[120px] opacity-30 animate-pulse ' + (isTigerTheme ? 'bg-rose-600' : 'bg-fuchsia-600')" style="animation-delay: 2s;"></div>
 
-        <div *ngIf="gameWon || !gameWon" class="mt-4 sm:mt-0">
-          <span
-            [ngClass]="badgeClass"
-            class="inline-flex rounded-full px-4 py-2 text-xs font-semibold uppercase tracking-[0.3em]"
-          >
-            {{ gameWon ? 'Success' : 'Score' }}
-          </span>
-        </div>
-      </div>
+  <div class="relative w-full max-w-3xl z-10 animate-fade-in-up">
+    <!-- Main Card -->
+    <div class="rounded-[40px] border border-white/20 bg-white/[0.03] p-8 sm:p-12 shadow-[0_8px_32px_0_rgba(0,0,0,0.5)] backdrop-blur-3xl relative overflow-hidden">
+      
+      <!-- Decorative Top Element -->
+      <div class="absolute top-0 left-1/2 -translate-x-1/2 w-1/3 h-1 rounded-b-full" [ngClass]="isTigerTheme ? 'bg-gradient-to-r from-amber-500 to-rose-500' : 'bg-gradient-to-r from-indigo-500 to-fuchsia-500'"></div>
 
-      <div class="mt-10 flex flex-col items-center gap-6 text-center">
-        <div class="relative flex h-44 w-44 items-center justify-center rounded-full border-4 border-white/20 bg-white/10 shadow-[0_35px_80px_-40px_rgba(255,255,255,0.8)]">
-          <div class="flex h-32 w-32 items-center justify-center rounded-full bg-white/10 text-center">
-            <div>
-              <p class="text-sm uppercase tracking-[0.35em] text-slate-300">
-                Total Score
+      <div class="flex flex-col md:flex-row items-center justify-between gap-8 relative z-10">
+        
+        <!-- Score Circle -->
+        <div class="relative flex flex-col items-center justify-center">
+          <div class="absolute inset-0 rounded-full animate-spin-slow opacity-50" [ngClass]="isTigerTheme ? 'bg-gradient-to-tr from-amber-500 to-transparent' : 'bg-gradient-to-tr from-indigo-500 to-transparent'" style="filter: blur(20px);"></div>
+          <div class="relative flex h-56 w-56 items-center justify-center rounded-full border-2 border-white/10 bg-black/40 shadow-2xl backdrop-blur-md">
+            <!-- Animated dashed border -->
+            <div class="absolute inset-2 rounded-full border border-dashed border-white/30 animate-[spin_20s_linear_infinite]"></div>
+            
+            <div class="text-center z-10">
+              <p class="text-xs font-bold uppercase tracking-[0.4em] text-slate-400 mb-2">Score</p>
+              <div class="flex items-baseline justify-center gap-1">
+                <span class="text-7xl font-black text-transparent bg-clip-text bg-gradient-to-br from-white to-white/50">{{ score }}</span>
+                <span class="text-2xl font-medium text-white/40">/{{ totalQuestions }}</span>
+              </div>
+              <p class="mt-2 text-sm font-semibold px-3 py-1 rounded-full inline-block" [ngClass]="badgeClass">
+                {{ percentage }}%
               </p>
-              <p class="mt-3 text-5xl font-semibold text-white">{{ score }}</p>
-              <p class="text-sm text-slate-400">of {{ totalQuestions }}</p>
             </div>
           </div>
         </div>
 
-        <div class="max-w-md">
-          <p class="text-xl font-semibold text-white">{{ outcomeTitle }}</p>
-          <p class="mt-3 text-base leading-7 text-slate-300">
-            {{ outcomeMessage }}
-          </p>
+        <!-- Details -->
+        <div class="flex-1 flex flex-col items-center md:items-start text-center md:text-left space-y-6">
+          <div class="flex items-center gap-4">
+            <div class="relative group">
+              <div class="absolute -inset-1 rounded-2xl bg-gradient-to-r opacity-50 group-hover:opacity-100 transition duration-1000 group-hover:duration-200 blur" [ngClass]="isTigerTheme ? 'from-amber-600 to-rose-600' : 'from-indigo-600 to-fuchsia-600'"></div>
+              <img
+                [src]="branding.logoPath"
+                [alt]="branding.organizationName"
+                class="relative h-20 w-20 rounded-2xl border border-white/20 bg-black/50 p-2 object-contain"
+              />
+            </div>
+            <div>
+              <p class="text-xs font-bold uppercase tracking-[0.3em] text-slate-400">
+                {{ branding.organizationName }}
+              </p>
+              <h1 class="text-2xl sm:text-3xl font-extrabold tracking-tight text-white mt-1">
+                {{ branding.heading }}
+              </h1>
+            </div>
+          </div>
+
+          <div class="bg-white/5 border border-white/10 rounded-2xl p-5 w-full">
+            <h2 class="text-2xl font-bold bg-clip-text text-transparent" [ngClass]="isTigerTheme ? 'bg-gradient-to-r from-amber-400 to-rose-400' : 'bg-gradient-to-r from-sky-400 to-fuchsia-400'">
+              {{ outcomeTitle }}
+            </h2>
+            <p class="mt-2 text-lg text-slate-300 leading-relaxed font-light">
+              {{ outcomeMessage }}
+            </p>
+          </div>
+
+          <!-- Actions -->
+          <div class="flex flex-col sm:flex-row gap-4 w-full pt-4">
+            <button
+              type="button"
+              class="group relative inline-flex flex-1 items-center justify-center overflow-hidden rounded-full p-4 font-bold text-white transition-all hover:scale-105 active:scale-95 shadow-xl"
+              (click)="retry.emit()"
+            >
+              <div class="absolute inset-0 bg-gradient-to-r transition-opacity group-hover:opacity-80" [ngClass]="accentGradient"></div>
+              <span class="relative flex items-center gap-2">
+                <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2.5">
+                  <path stroke-linecap="round" stroke-linejoin="round" d="M4 4v5h.582m15.356 2A8.001 8.001 0 004.582 9m0 0H9m11 11v-5h-.581m0 0a8.003 8.003 0 01-15.357-2m15.357 2H15" />
+                </svg>
+                Play Again
+              </span>
+            </button>
+
+            <button
+              type="button"
+              class="group relative inline-flex flex-1 items-center justify-center overflow-hidden rounded-full p-4 font-bold text-white bg-white/10 border border-white/20 transition-all hover:bg-white/20 hover:scale-105 active:scale-95"
+              (click)="gotoContestants.emit()"
+            >
+              <span class="relative flex items-center gap-2">
+                <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2.5">
+                  <path stroke-linecap="round" stroke-linejoin="round" d="M17 20h5v-2a3 3 0 00-5.356-1.857M17 20H7m10 0v-2c0-.656-.126-1.283-.356-1.857M7 20H2v-2a3 3 0 015.356-1.857M7 20v-2c0-.656.126-1.283.356-1.857m0 0a5.002 5.002 0 019.288 0M15 7a3 3 0 11-6 0 3 3 0 016 0zm6 3a2 2 0 11-4 0 2 2 0 014 0zM7 10a2 2 0 11-4 0 2 2 0 014 0z" />
+                </svg>
+                Contestants
+              </span>
+            </button>
+          </div>
         </div>
-      </div>
-
-      <div class="mt-10 flex flex-col gap-3 sm:flex-row sm:justify-center">
-        <button
-          type="button"
-          class="inline-flex items-center justify-center rounded-3xl bg-gradient-to-r px-5 py-3 text-sm font-semibold text-slate-950 transition hover:brightness-105 focus:outline-none focus:ring-2 focus:ring-white focus:ring-offset-2 focus:ring-offset-slate-900"
-          [ngClass]="accentGradient"
-          (click)="retry.emit()"
-        >
-          Play another round
-        </button>
-
-        <button
-          type="button"
-          class="inline-flex items-center justify-center rounded-3xl border border-white/20 bg-white/10 px-5 py-3 text-sm font-semibold text-white transition hover:bg-white/20 focus:outline-none focus:ring-2 focus:ring-white focus:ring-offset-2 focus:ring-offset-slate-900"
-          (click)="gotoContestants.emit()"
-        >
-          Go to contestants list
-        </button>
       </div>
     </div>
   </div>
