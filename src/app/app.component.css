@@ -2,6 +2,13 @@
   position: relative;
   width: 100%;
   min-height: 100vh;
+  background: transparent;
+}
+
+@media (max-width: 768px) {
+  .app-wrapper {
+    overflow-x: hidden;
+  }
 }
 
 /* Floating Action Button Styles */
