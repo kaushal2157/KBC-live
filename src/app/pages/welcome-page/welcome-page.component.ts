@@ -116,6 +116,7 @@ export class WelcomePageComponent implements AfterViewInit, OnDestroy {
   }
 
   startQuiz() {
+    this.startSound.pause();
     this.router.navigate(['contestents-list']);
   }
 }
