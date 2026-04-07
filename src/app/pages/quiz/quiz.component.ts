@@ -81,6 +81,8 @@ export class QuizComponent {
   lifelineSound = new Audio('lifeline.mp3');
   clappingSound = new Audio('clapping.mp3');
   wrongAnsSound = new Audio('hooter.mp3');
+  dramaticSound = new Audio('dramatic.mp3');
+  questionSound = new Audio('question-present.mp3');
 
   // Expose Math for template
   Math = Math;
@@ -98,6 +100,7 @@ export class QuizComponent {
       .getContestantById(this.contestentId)
       .subscribe((data) => {
         this.questions = [...(data?.questions ?? [])];
+        this.dramaticSound.play()
         console.log('questions : ', this.questions);
 
         if (this.questions.length) {
@@ -123,8 +126,8 @@ export class QuizComponent {
     this.gameStarted = true;
     this.gameState.currentQuestion = 0;
     this.selectedAnswer = null;
-
     this.resetQuestionState();
+    this.playQuestionSound();
   }
 
   resetGame() {
@@ -226,6 +229,12 @@ export class QuizComponent {
     return this.questions[this.gameState.currentQuestion];
   }
 
+  playQuestionSound() {
+    this.questionSound.pause();
+    this.questionSound.currentTime = 0;
+    this.questionSound.play().catch(() => {});
+  }
+
   selectAnswer(optionIndex: number) {
     if (this.selectedAnswer !== null) return;
 
@@ -271,6 +280,7 @@ export class QuizComponent {
     }
 
     this.resetQuestionState();
+    this.playQuestionSound();
   }
   resetQuestionState() {
     this.showOptions = false;
