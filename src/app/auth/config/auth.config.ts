@@ -10,7 +10,9 @@ export const AUTH_CONFIG = {
     { username: 'client', password: 'client@123', role: 'pravakta' },
     // Role-based credentials requested by client
     { username: 'pravakta', password: 'pravakta@2026', role: 'pravakta' },
-    { username: 'tigers', password: 'gems@2026', role: 'tiger' }
+    { username: 'tigers', password: 'gems@2026', role: 'tiger' },
+    { username: 'gems', password: 'gems@55', role: 'tiger' },
+    { username: 'champion', password: 'champions@55', role: 'tiger' },
   ] as const,
   storageLockKey: 'kbc_access_granted',
   roleStorageKey: 'kbc_selected_role',
