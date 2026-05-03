@@ -17,6 +17,7 @@ export class WelcomePageComponent implements AfterViewInit, OnDestroy {
 
   branding    = this.roleContextService.getBrandingConfig();
   isTigerTheme = this.roleContextService.getCurrentRole() === 'tiger';
+  isPravaktaTheme = this.roleContextService.getCurrentRole() === 'pravakta';
   tagline     = 'Empowering Future Leaders Through Knowledge';
 
   // Compact acronym row with glass colors
